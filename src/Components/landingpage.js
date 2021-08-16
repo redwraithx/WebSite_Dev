@@ -7,8 +7,9 @@ class Landing extends Component {
         return(
             <div style={{width: '100%', margin: 'auto'}}>
                 <Grid className="landing-grid">
+                    
                     <Cell col={12}>
-
+                        
                         <img 
                             src="https://www.pngkey.com/png/full/114-1149878_setting-user-avatar-in-specific-size-without-breaking.png"
                             alt="avatar"
@@ -16,11 +17,11 @@ class Landing extends Component {
                         />
 
                         <div className="banner-text">
-                            <h1>Video Game Design and Programmer</h1>
+                            <h1>Junior Video Game Design and Programming</h1>
 
                             <hr />
 
-                            <p>C# | C++ | Unity 3D</p>
+                            <p><b>[</b> C# and Unity 3D <b>][</b> C++ and Unreal <b>][</b> HTML and CSS <b>]</b></p>
 
                         </div>
 
