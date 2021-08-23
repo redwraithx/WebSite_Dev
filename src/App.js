@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './Components/main';
-import { Link } from 'react-router-dom';
+import { Link, Switch, Route, Redirect } from 'react-router-dom';
 
 
 function App() {
@@ -13,20 +13,23 @@ function App() {
             <Navigation>
                 <Link to="/">Home</Link>
                 <Link to="/resume">Resume</Link>
-                <Link to="/aboutme">About Me</Link>
+                <Link to="/aboutme">About</Link>
                 <Link to="/projects">Projects</Link>
                 <Link to="/contact">Contact</Link>
             </Navigation>
         </Header>
         <Drawer title="Site Navigation">
             <Navigation>
-                <Link to="/">Home</Link>
-                <Link to="/resume">Resume</Link>
-                <Link to="/aboutme">About Me</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
+                <Link to="./">Home</Link>
+                <Link to="./resume">Resume</Link>
+                <Link to="./aboutme">About</Link>
+                <Link to="./projects">Projects</Link>
+                <Link to="./contact">Contact</Link>
             </Navigation>
         </Drawer>
+
+        <Redirect to="./" />
+
         <Content>
             <div className="page-content" />
             <Main />

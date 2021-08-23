@@ -17,7 +17,7 @@ class Landing extends Component {
                         />
 
                         <div className="banner-text">
-                            <h1>Junior Video Game Design and Programming</h1>
+                            <h1 align="center">Video Game Programming and Design</h1>
 
                             <hr />
 
