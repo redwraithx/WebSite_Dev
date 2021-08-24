@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './Components/main';
-import { Link, Switch, Route, Redirect } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 
 function App() {
@@ -32,11 +32,12 @@ function App() {
 
         <Content>
             <div className="page-content" />
+
             <Main />
         </Content>
     </Layout>
 </div>
   );
-}
+};
 
 export default App;
