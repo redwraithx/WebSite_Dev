@@ -34,9 +34,9 @@ function App() {
         <Redirect to="./landingpage" />
 
         <Content>
-            <div className="page-content" />
-
-            <Main />
+            <div className="page-content">
+                <Main />
+            </div>
         </Content>
     </Layout>
 </div>
