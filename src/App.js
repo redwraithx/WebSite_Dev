@@ -28,8 +28,6 @@ function App() {
             </Navigation>
         </Drawer>
 
-        <Redirect to="./landingpage" />
-
         <Content>
             <div className="page-content">
                 <Main />
