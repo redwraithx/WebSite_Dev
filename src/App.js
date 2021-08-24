@@ -11,11 +11,11 @@ function App() {
     <Layout>
         <Header className="header-color" title="Welcome to BrianPurdy.ca" scroll>
             <Navigation>
-                <Link to="/">Home</Link>
-                <Link to="/resume">Resume</Link>
-                <Link to="/aboutme">About</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
+                <Link to="./">Home</Link>
+                <Link to="./resume">Resume</Link>
+                <Link to="./aboutme">About</Link>
+                <Link to="./projects">Projects</Link>
+                <Link to="./contact">Contact</Link>
             </Navigation>
         </Header>
         <Drawer title="Site Navigation">
