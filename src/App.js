@@ -14,7 +14,7 @@ function App() {
     <Layout>
         <Header className="header-color" title="Welcome to BrianPurdy.ca" scroll>
             <Navigation>
-                <Link to="./">Home</Link>
+                <Link to="./landingpage">Home</Link>
                 <Link to="./resume">Resume</Link>
                 <Link to="./aboutme">About</Link>
                 <Link to="./projects">Projects</Link>
@@ -23,7 +23,7 @@ function App() {
         </Header>
         <Drawer title="Site Navigation">
             <Navigation>
-                <Link to="./">Home</Link>
+                <Link to="./landingpage">Home</Link>
                 <Link to="./resume">Resume</Link>
                 <Link to="./aboutme">About</Link>
                 <Link to="./projects">Projects</Link>
@@ -31,7 +31,7 @@ function App() {
             </Navigation>
         </Drawer>
 
-        <Redirect to="./" />
+        <Redirect to="./landingpage" />
 
         <Content>
             <div className="page-content" />

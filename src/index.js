@@ -8,16 +8,14 @@ import 'react-mdl/extra/material.js';
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
+  
+    
+  
     <BrowserRouter>
       <App />
     </BrowserRouter>,
 
-  document.getElementById('root'),
-
-  Cookies.set('bryCookie', 'newDev', {
-    sameSite: 'none',
-    secure: true
-  })
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

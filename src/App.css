@@ -52,6 +52,18 @@
   color: #61dafb;
 }
 
+@media screen and (max-width: 768px) {
+
+  .demo-big-content
+  {
+      background: #405eac;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #3f2b96, #405eac);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #3f2b96, #405eac); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+  }
+
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
