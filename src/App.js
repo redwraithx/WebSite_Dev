@@ -6,9 +6,6 @@ import { Link, Redirect } from 'react-router-dom';
 
 
 function App() {
-
-    
-
   return (    
     <div className="demo-big-content">
     <Layout>
@@ -36,7 +33,7 @@ function App() {
         <Content>
             <div className="page-content">
                 <Main />
-            </div>
+            </div> 
         </Content>
     </Layout>
 </div>
