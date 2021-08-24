@@ -12,7 +12,12 @@ ReactDOM.render(
       <App />
     </BrowserRouter>,
 
-  document.getElementById('root')
+  document.getElementById('root'),
+
+  Cookies.set('bryCookie', 'newDev', {
+    sameSite: 'none',
+    secure: true
+  })
 );
 
 // If you want to start measuring performance in your app, pass a function
