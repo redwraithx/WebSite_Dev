@@ -12,6 +12,7 @@ const CSharpProjectsFetch = () => {
 
     const projectInfo = [
         { gameName: 'RPG World', engineName: 'Unity', codeLanguage: 'C#', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'This is a game description', videoURL: '',  imgURL: '', gitHubURL: 'http://github.com/', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
+        { gameName: 'RPG World', engineName: 'Unity', codeLanguage: 'C#', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'This is a game description', videoURL: '',  imgURL: '', gitHubURL: 'http://github.com/', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
 
     ];
 
@@ -26,7 +27,7 @@ const CSharpProjectsFetch = () => {
         if(hasYouTubeURL !== "") {
             console.log("have yt url");
             return (
-                <GetVideo embedId={hasYouTubeURL} height="450rem" width="100%" className="ContentStyle" style={{ paddingLeft: '4px', paddingRight: '4px', paddingTop: '6px', paddingBottom: '6px', }} />
+                <GetVideo embedId={hasYouTubeURL} className="ContentStyle" style={{ paddingLeft: '4px', paddingRight: '4px', paddingTop: '6px', paddingBottom: '6px', }} />
                 
             );
         }
@@ -34,14 +35,14 @@ const CSharpProjectsFetch = () => {
             console.log("no yt url");
 
             return (
-                <Card.Img variant="top" src={process.env.PUBLIC_URL + hasCustomImageURL} height="440rem" width="auto" className="ContentStyle" style={{ paddingLeft: '4px', paddingRight: '4px', paddingTop: '6px', paddingBottom: '6px', }} />
+                <Card.Img variant="top" src={process.env.PUBLIC_URL + hasCustomImageURL} className="ContentStyle" style={{ paddingLeft: '4px', paddingRight: '4px', paddingTop: '6px', paddingBottom: '6px', }} />
             );
         }
         else {
             console.log("No Links yet, displaying comingSoonIMG");
 
             return (
-                <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/ProjectImages/coming-soon.png"} height="450rem" width="100%" className="ContentStyle" style={{ paddingLeft: '4px', paddingRight: '4px', paddingTop: '6px', paddingBottom: '6px', }} />
+                <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/ProjectImages/coming-soon.png"} className="ContentStyle" style={{   paddingLeft: '4px', paddingRight: '4px', paddingTop: '6px', paddingBottom: '6px', }} />
             );
         }
 
@@ -49,19 +50,17 @@ const CSharpProjectsFetch = () => {
         
 
         return (
-            <Card key={index} className="box ContentStyle">
+            <Card key={index} className="box ContentStyle" style={{ height: 'auto', width: 'auto' }}>
                 
                 <Card.Body className="ContentStyle">
 
-                    <Card.Title className="ContentAlignment" style={{ fontWeight: 'bolder', fontVariant: 'full-width', height: '1rem' }}><h1>{project.gameName}</h1></Card.Title>
+                    <Card.Title className="ContentAlignment" style={{ fontWeight: 'bolder', height: '1rem' }}><h1>{project.gameName}</h1></Card.Title>
 
                     
 
-                    { /* <Card.Img variant="top" src=".././Images/ProjectImages/coming-soon.png" src={project.imgURL} height="450rem" width="100%" className="ContentStyle" style={{ paddingLeft: '4px', paddingRight: '4px', paddingTop: '6px', paddingBottom: '6px', }} /> */ }
-                    { /* <GetVideo embedId="TeurfjuEIgA" height="450rem" width="100%" className="ContentStyle" style={{ paddingLeft: '4px', paddingRight: '4px', paddingTop: '6px', paddingBottom: '6px', }} /> */ }
-
-                    {GetVideoOrImage()}
-
+                    <div height="100rem" width="200rem" style={{  }} >
+                        {GetVideoOrImage()}
+                    </div>
 
 
                     <div className="ContentTextStyle ContentStyle" style={{ height: '16rem' }}>
@@ -74,8 +73,8 @@ const CSharpProjectsFetch = () => {
                     </div>
                     
                     <div className="ProjectLinks ContentAlignment" style={{ height: '3rem' }} >
-                        <button className="ProjectLinkButton" onClick={() => window.open(project.gitHubURL, "_blank")} style={{ color: 'Black', fontSize: '18px', fontWeight: 'bolder', paddingTop: '2px', paddingBottom: '2px', marginTop: '0px', marginBottom: '0px' }} >GitHub Repository</button>
-                        <button className="ProjectLinkButton" onClick={() => window.open(project.playOrDownloadURL, "_blank")} style={{ color: 'Black', fontSize: '18px', fontWeight: 'bolder' , paddingTop: '2px', paddingBottom: '2px', marginTop: '0px', marginBottom: '0px'  }} >Game Demo Build</button>
+                        <button className="ProjectLinkButton" onClick={() => window.open(project.gitHubURL, "_blank")} style={{ color: 'Black', fontSize: '18px', fontWeight: 'bolder', paddingTop: '2px', paddingBottom: '2px', marginTop: '0px', marginBottom: '0px' }} >GitHub</button>
+                        <button className="ProjectLinkButton" onClick={() => window.open(project.playOrDownloadURL, "_blank")} style={{ color: 'Black', fontSize: '18px', fontWeight: 'bolder' , paddingTop: '2px', paddingBottom: '2px', marginTop: '0px', marginBottom: '0px'  }} >Demo</button>
                     </div>    
 
                         

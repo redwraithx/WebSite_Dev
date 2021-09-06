@@ -1,25 +1,20 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Layout, Header, Navigation, Drawer, Content, IconToggle } from 'react-mdl';
+import {Layout, Header, Navigation, Drawer, Content, IconToggle, IconButton } from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
+import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 
 
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      sidebarOpen: false,
-    };
-
-    this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
+    
 
   }
   
-  onSetSidebarOpen(open) {
-    this.setState({ sidebarOpen: open });
-  }
+
 
 
 
@@ -54,9 +49,9 @@ class App extends Component {
         </Header>
 
 
-        <Drawer  open={this.state.sidebarOpen}   className="Drawer-SideBar" id="SideBar" aria-expanded="false" title={<Link style={{textDecoration: 'none', color: 'black'}} to='/'>My Site Links</Link>}>
+        <Drawer className="Drawer-SideBar" id="SideBar" aria-expanded="false" title={<Link style={{textDecoration: 'none', color: 'black'}} to='/'>My Site Links</Link>}>
             <Navigation >
-              <Link onClick={console.log("test sidebar"), () => this.onSetSidebarOpen(true)} to='/' className="Nav-Links" className="Nav-SideBar">Home</Link>
+              <Link onClick={IconToggle} to='/' className="Nav-Links" className="Nav-SideBar">Home</Link>
               <Link onClick={IconToggle} to='/resume' className="Nav-Links" className="Nav-SideBar">Resume</Link>
               <Link onClick={IconToggle} to='/aboutme' className="Nav-Links" className="Nav-SideBar">About Me</Link>
               <Link onClick={IconToggle} to='/projects' className="Nav-Links" className="Nav-SideBar">Projects</Link>

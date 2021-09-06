@@ -24,8 +24,9 @@ class Landing extends Component {
               <div className="social-links">
 
                 {/* LinkedIn */}
-                
-                  <i className="fa fa-linkedin-square" aria-hidden="true" aria-label="View my LinkedIn" />
+                <a href="https://www.linkedin.com/in/brianpurdy01" rel="noopener noreferrer" target="_blank">
+                  <i class="SocialMediaLinks" className="fa fa-linkedin-square" aria-hidden="true" aria-label="View my LinkedIn" />
+                </a>
               
                 {/* Github */}
                 <a href="https://github.com/redwraithx/" rel="noopener noreferrer" target="_blank">
@@ -42,9 +43,8 @@ class Landing extends Component {
           </Cell>
         </Grid>
 
-        <Footer size="2" style={{  position: 'absolute', left: '0', bottom: '0', right: '0' }}>
-          <div align="center">BrianPurdy.ca @ 2021</div>
-          <div align="center">Best viewed @ 1920x1080 resolution.</div>
+        <Footer size="2" style={{  position: 'absolute', left: '0', bottom: '0', right: '0', color: '#4e4e4e' }}>
+          <div align="center">BrianPurdy.ca @ 2021, best viewed @ 1920x1080 resolution.</div>
         </Footer>
 
       </div>

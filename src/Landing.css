@@ -5,20 +5,31 @@ hr {
 }
 
 
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .social-links i {
+    font-size: 5em;
+    padding: 8px;
+  }
 
 
-
-.fa {
+.SocialMediaLinks i {
     justify-content:space-around !important;
     border-style: none;
     border-radius: 20px 20px 20px 20px !important;
     
 }
 
-.fa:hover{
+.SocialMediaLinks i:hover{
     justify-content:space-around !important;
     border-style: none;
     border-radius: 20px 20px 20px 20px !important;
     background-color: slateblue !important;
     
 }
+
