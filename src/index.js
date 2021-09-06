@@ -10,11 +10,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 
 ReactDOM.render(
-  <HashRouter scroll>
+  <React.StrictMode>
+    <HashRouter scroll>
 
-    <App />
+      <App />
 
-  </HashRouter>
+    </HashRouter>
+  </React.StrictMode>
   , document.getElementById('root'));
  
 
