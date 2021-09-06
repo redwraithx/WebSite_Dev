@@ -1,26 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import { BrowserRouter } from 'react-router-dom';
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
-import { BrowserRouter } from 'react-router-dom';
+import './index.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import {Footer } from 'react-mdl';
 
 ReactDOM.render(
   <BrowserRouter scroll>
-    <App />
 
-    
+    <App />
 
   </BrowserRouter>
   , document.getElementById('root'));
-
  
 
 registerServiceWorker();
-
-

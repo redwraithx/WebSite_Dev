@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-import '.././Projects.css';
+import { Tabs, Tab } from 'react-mdl';
 import DynamicTableForProjects from '../ProjectData/DynamicTableForProjects';
-
+import '.././Projects.css';
 
 
 
@@ -65,10 +64,10 @@ class Projects extends Component {
         <div className="Projects-Header" >
 
           <Tabs activeTab={this.state.activeTab} onChange={  (tabId) => this.setState({ activeTab: tabId }) } style={{ flex: '1', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} >
-            <Tab style={ { top: '0', left: '0', width: '30%', fontSize: '80%', fontWeight: 'bolder', color: ( this.state.activeTab == 0 ) ? 'black' : 'gray', background: ( this.state.activeTab == 0) ? 'darkgray' : '' } } >Unity Projects</Tab>
-            <Tab style={ { top: '0', left: '0', width: '30%', fontSize: '80%', fontWeight: 'bolder', color: ( this.state.activeTab == 1 ) ? 'black' : 'gray', background: ( this.state.activeTab == 1) ? 'darkgray' : '' } } >C# Projects</Tab>
-            <Tab style={ { top: '0', left: '0', width: '30%', fontSize: '80%', fontWeight: 'bolder', color: ( this.state.activeTab == 2 ) ? 'black' : 'gray', background: ( this.state.activeTab == 2) ? 'darkgray' : '' } } >C++ Projects</Tab>
-            <Tab style={ { top: '0', left: '0', width: '30%', fontSize: '80%', fontWeight: 'bolder', color: ( this.state.activeTab == 3 ) ? 'black' : 'gray', background: ( this.state.activeTab == 3) ? 'darkgray' : '' } } >Unreal Projects</Tab>
+            <Tab style={ { top: '0', left: '0', width: '30%', fontSize: '80%', fontWeight: 'bolder', color: ( this.state.activeTab === 0 ) ? 'black' : 'gray', background: ( this.state.activeTab == 0) ? 'darkgray' : '' } } >Unity Projects</Tab>
+            <Tab style={ { top: '0', left: '0', width: '30%', fontSize: '80%', fontWeight: 'bolder', color: ( this.state.activeTab === 1 ) ? 'black' : 'gray', background: ( this.state.activeTab == 1) ? 'darkgray' : '' } } >C# Projects</Tab>
+            <Tab style={ { top: '0', left: '0', width: '30%', fontSize: '80%', fontWeight: 'bolder', color: ( this.state.activeTab === 2 ) ? 'black' : 'gray', background: ( this.state.activeTab == 2) ? 'darkgray' : '' } } >C++ Projects</Tab>
+            <Tab style={ { top: '0', left: '0', width: '30%', fontSize: '80%', fontWeight: 'bolder', color: ( this.state.activeTab === 3 ) ? 'black' : 'gray', background: ( this.state.activeTab == 3) ? 'darkgray' : '' } } >Unreal Projects</Tab>
           </Tabs>
 
 
