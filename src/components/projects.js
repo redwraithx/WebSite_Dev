@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Tabs, Tab } from 'react-mdl';
-import DynamicTableForProjects from '../ProjectData/DynamicTableForProjects';
+import CSharpProjectsFetch from '../ProjectData/CSharpProjectsFetch';
 import '.././Projects.css';
 
 
@@ -29,7 +29,7 @@ class Projects extends Component {
         
         <div  style={{ alignContent: 'center', justifyContent: 'center', background: 'repeat linear-gradient(to right, #1d2d44, #001f54, #1d2d44)', backgroundAttachment: 'fixed' }} > 
 
-          <DynamicTableForProjects />
+          <CSharpProjectsFetch />
 
         </div>
       )

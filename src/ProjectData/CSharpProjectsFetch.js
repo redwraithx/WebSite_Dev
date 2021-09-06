@@ -8,7 +8,7 @@ import './GetVideo.css';
 
 
 
-const DynamicTableForProjects = () => {
+const CSharpProjectsFetch = () => {
 
     const projectInfo = [
         { gameName: 'RPG World', engineName: 'Unity', codeLanguage: 'C#', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'This is a game description', videoURL: '',  imgURL: '', gitHubURL: 'http://github.com/', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
@@ -64,7 +64,7 @@ const DynamicTableForProjects = () => {
 
 
 
-                    <div className="ContentTextStyle ContentStyle" style={{ height: '18rem' }}>
+                    <div className="ContentTextStyle ContentStyle" style={{ height: '16rem' }}>
                         Game Engine: {project.engineName}<br />
                         Code Language: {project.codeLanguage}<br />
                         Development Months: {project.numberOfMonthsToCreate}<br />
@@ -96,4 +96,4 @@ const DynamicTableForProjects = () => {
 
 
 
-export default DynamicTableForProjects;
+export default CSharpProjectsFetch;
