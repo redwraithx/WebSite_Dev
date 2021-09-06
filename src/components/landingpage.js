@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Grid, Cell, Footer } from 'react-mdl';
 import '.././Landing.css';
 
+
 class Landing extends Component {
+
   render() {
     return(
       <div style={{width: '100%', margin: 'auto'}} scroll>
@@ -17,7 +19,7 @@ class Landing extends Component {
             
               <hr />
 
-              <p>[ C# | <img src="%PUBLIC_URL%/Images/Icons/unityIcon32x32.png" alt="Unity Logo Image" /> Unity3D | C++ | <img src=".././Images/Icons/unrealIcon32x32.png" alt="Unreal Logo Image" /> Unreal ]</p>
+              <p>[ C# | <img src={process.env.PUBLIC_URL + "/Images/Icons/unityIcon32x32.png"} alt="Unity Logo Image" /> Unity3D | C++ | <img src={process.env.PUBLIC_URL + "/Images/Icons/unrealIcon32x32.png"} alt="Unreal Logo Image" /> Unreal ]</p>
 
               <div className="social-links">
 

@@ -11,7 +11,7 @@ import './GetVideo.css';
 const DynamicTableForProjects = () => {
 
     const projectInfo = [
-        { gameName: 'RPG World', engineName: 'Unity', codeLanguage: 'C#', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'This is a game description', videoURL: 'tFNrZEhMX1g',  imgURL: 'https://seeklogo.com/images/I/instagram-logo-A807AD378B-seeklogo.com.png', gitHubURL: 'http://github.com/', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '.././Images/ProjectImages/coming-soon.png' },
+        { gameName: 'RPG World', engineName: 'Unity', codeLanguage: 'C#', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'This is a game description', videoURL: '',  imgURL: '', gitHubURL: 'http://github.com/', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
 
     ];
 
@@ -34,14 +34,14 @@ const DynamicTableForProjects = () => {
             console.log("no yt url");
 
             return (
-                <Card.Img variant="top" src={hasCustomImageURL} height="440rem" width="auto" className="ContentStyle" style={{ paddingLeft: '4px', paddingRight: '4px', paddingTop: '6px', paddingBottom: '6px', }} />
+                <Card.Img variant="top" src={process.env.PUBLIC_URL + hasCustomImageURL} height="440rem" width="auto" className="ContentStyle" style={{ paddingLeft: '4px', paddingRight: '4px', paddingTop: '6px', paddingBottom: '6px', }} />
             );
         }
         else {
             console.log("No Links yet, displaying comingSoonIMG");
 
             return (
-                <Card.Img variant="top" src=".././Images/ProjectImages/coming-soon.png" height="450rem" width="100%" className="ContentStyle" style={{ paddingLeft: '4px', paddingRight: '4px', paddingTop: '6px', paddingBottom: '6px', }} />
+                <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/ProjectImages/coming-soon.png"} height="450rem" width="100%" className="ContentStyle" style={{ paddingLeft: '4px', paddingRight: '4px', paddingTop: '6px', paddingBottom: '6px', }} />
             );
         }
 

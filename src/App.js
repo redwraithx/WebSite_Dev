@@ -20,7 +20,7 @@ class App extends Component {
         
         <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">
           
-        <img className="SiteImage" src=".././Images/Icons/MyIcon_Small.png" alt="Icon Image of Brian" align="left" />
+        <img className="SiteImage" src={process.env.PUBLIC_URL + "/Images/Icons/MyIcon_Small.png"} alt="Icon Image of Brian" align="left" />
             <div className="HeaderTitle">
               
               <div className="Header-Name" align="left">Wecome to</div>
