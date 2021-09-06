@@ -27,9 +27,9 @@
 
 .grid > div {
     min-width: 30rem;
-    max-width: 60rem;
+    max-width: 55rem;
     min-height: 40rem;
-    max-height: 50rem;
+    max-height: 55rem;
     flex-basis: calc(50% - 40px);
 
 }
