@@ -17,7 +17,7 @@ class Landing extends Component {
             
               <hr />
 
-              <p>[ C# | <img src="%PUBLIC_URL%/Images/Icons/unityIcon32x32.png" /> Unity3D | C++ | <img src=".././Images/Icons/unrealIcon32x32.png" /> Unreal ]</p>
+              <p>[ C# | <img src="%PUBLIC_URL%/Images/Icons/unityIcon32x32.png" alt="Unity Logo Image" /> Unity3D | C++ | <img src=".././Images/Icons/unrealIcon32x32.png" alt="Unreal Logo Image" /> Unreal ]</p>
 
               <div className="social-links">
 

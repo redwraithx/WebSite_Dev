@@ -71,19 +71,10 @@ class Projects extends Component {
           </Tabs>
 
 
-        </div >
+      </div >
 
-          { /*<Grid container className="projects-grid-color"  style={{ height: 'auto', width: '100rem', gridAutoFlow: 'column'  }}  >
-             <Cell col={2} style={{ justifyContent: 'center' }}>
-
-    <div style={{   }} >{this.toggleCategories()}</div> */}
-
-
-            {this.toggleCategories()}
+        {this.toggleCategories()}
             
-           {/* </Cell>
-          </Grid> */}
-
       </div>
     )
   }

@@ -19,18 +19,18 @@ const DynamicTableForProjects = () => {
 
     const hasYouTubeURL = project.videoURL;
     const hasCustomImageURL = project.imgURL;
-    const defaultImageURL = project.comingSoonIMG;
+    
 
     function GetVideoOrImage(project){
 
-        if(hasYouTubeURL != "") {
+        if(hasYouTubeURL !== "") {
             console.log("have yt url");
             return (
                 <GetVideo embedId={hasYouTubeURL} height="450rem" width="100%" className="ContentStyle" style={{ paddingLeft: '4px', paddingRight: '4px', paddingTop: '6px', paddingBottom: '6px', }} />
                 
             );
         }
-        else if(hasCustomImageURL != "") {
+        else if(hasCustomImageURL !== "") {
             console.log("no yt url");
 
             return (
