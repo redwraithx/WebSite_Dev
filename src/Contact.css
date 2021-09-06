@@ -1,0 +1,81 @@
+  
+  .contact-body {
+    background: #1d2d44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1d2d44, #001f54, #1d2d44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1d2d44, #001f54, #1d2d44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    
+  }
+  
+  
+  .contact-grid {
+    background: #1d2d44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1d2d44, #001f54, #1d2d44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1d2d44, #001f54, #1d2d44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    position: fixed;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+.fa:hover{
+    border-style: none;
+    border-radius: 0px 0px 0px 0px !important;
+    background-color: white !important;
+    
+}
+
+.PhoneButton {
+    margin-top: 8px;
+    margin-left: 20px;
+    text-align: center;
+    border: none;
+    border-style: groove;
+    background-color: gray;
+    height: 50px;
+    width: 40vh;
+    font-size: 20pt;
+    
+}
+
+.EmailButton {
+    margin-top: 11px;
+    margin-left: 10px;
+    text-align: center;
+    border: none;
+    border-style: groove;
+    background-color: gray;
+    height: 50px;
+    width: 50vh;
+    font-size: 20pt;
+}
+
+.fa-envelope {
+    display: flex;
+    flex: 1; 
+}
+
+.fa-phone-square {
+    display: flex;
+    flex: 1;
+}
+
+.PhoneInfo {
+    align-content: space-between;
+    flex: 2;
+
+}
+
+
+.contact-list {
+    padding-left: 30px;
+    
+}

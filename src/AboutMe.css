@@ -1,0 +1,13 @@
+
+.aboutme-grid {
+    background: #1d2d44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1d2d44, #001f54, #1d2d44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1d2d44, #001f54, #1d2d44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    position: fixed;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
