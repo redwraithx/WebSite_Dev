@@ -7,8 +7,21 @@ import { Link } from 'react-router-dom';
 
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      sidebarOpen: false,
+    };
 
+    this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
+
+  }
   
+  onSetSidebarOpen(open) {
+    this.setState({ sidebarOpen: open });
+  }
+
+
 
   render() {
     return (
@@ -41,9 +54,9 @@ class App extends Component {
         </Header>
 
 
-        <Drawer className="Drawer-SideBar" id="SideBar" aria-expanded="false" title={<Link style={{textDecoration: 'none', color: 'black'}} to='/'>My Site Links</Link>}>
+        <Drawer  open={this.state.sidebarOpen}   className="Drawer-SideBar" id="SideBar" aria-expanded="false" title={<Link style={{textDecoration: 'none', color: 'black'}} to='/'>My Site Links</Link>}>
             <Navigation >
-              <Link onClick={IconToggle} to='/' className="Nav-Links" className="Nav-SideBar">Home</Link>
+              <Link onClick={() => this.onSetSidebarOpen(true)} to='/' className="Nav-Links" className="Nav-SideBar">Home</Link>
               <Link onClick={IconToggle} to='/resume' className="Nav-Links" className="Nav-SideBar">Resume</Link>
               <Link onClick={IconToggle} to='/aboutme' className="Nav-Links" className="Nav-SideBar">About Me</Link>
               <Link onClick={IconToggle} to='/projects' className="Nav-Links" className="Nav-SideBar">Projects</Link>
