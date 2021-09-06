@@ -11,7 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter basename="/WebSite_Dev" scroll>
+    <HashRouter scroll>
 
       <App />
 

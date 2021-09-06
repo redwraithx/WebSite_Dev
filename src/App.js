@@ -31,7 +31,7 @@ class App extends Component {
 
   
             <Navigation className="Nav-MainBar">  
-                <Link to="/" className="Nav-Links">Home</Link>
+                <Link to="/#" className="Nav-Links">Home</Link>
                 <Link to="/resume" className="Nav-Links">Resume</Link>
                 <Link to="/aboutme" className="Nav-Links">About Me</Link>
                 <Link to="/projects" className="Nav-Links">Projects</Link>
