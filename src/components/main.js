@@ -12,12 +12,12 @@ const Main = () => (
   
   <Router history={createHistory({basename: process.env.PUBLIC_URL})}>
     <Switch>
-      <Route exact path="/" component={LandingPage} />
-      <Route path="/aboutme" component={AboutMe} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/projects" component={Projects} />
-      <Route path="/resume" component={Resume} />
-      <Route path="/" component={LandingPage} />
+      <Route exact path="/gh-pages-url/" component={LandingPage} />
+      <Route path="/gh-pages-url/aboutme" component={AboutMe} />
+      <Route path="/gh-pages-url/contact" component={Contact} />
+      <Route path="/gh-pages-url/projects" component={Projects} />
+      <Route path="/gh-pages-url/resume" component={Resume} />
+      <Route path="/gh-pages-url/" component={LandingPage} />
     </Switch>
   </Router>
 )
