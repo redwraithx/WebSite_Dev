@@ -56,7 +56,7 @@ class App extends Component {
 
         <Drawer  open={this.state.sidebarOpen}   className="Drawer-SideBar" id="SideBar" aria-expanded="false" title={<Link style={{textDecoration: 'none', color: 'black'}} to='/'>My Site Links</Link>}>
             <Navigation >
-              <Link onClick={() => this.onSetSidebarOpen(true)} to='/' className="Nav-Links" className="Nav-SideBar">Home</Link>
+              <Link onClick={console.log("test sidebar"), () => this.onSetSidebarOpen(true)} to='/' className="Nav-Links" className="Nav-SideBar">Home</Link>
               <Link onClick={IconToggle} to='/resume' className="Nav-Links" className="Nav-SideBar">Resume</Link>
               <Link onClick={IconToggle} to='/aboutme' className="Nav-Links" className="Nav-SideBar">About Me</Link>
               <Link onClick={IconToggle} to='/projects' className="Nav-Links" className="Nav-SideBar">Projects</Link>
