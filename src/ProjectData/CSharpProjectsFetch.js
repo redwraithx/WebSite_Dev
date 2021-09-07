@@ -35,14 +35,14 @@ const CSharpProjectsFetch = () => {
             console.log("no yt url");
 
             return (
-                <Card.Img variant="top" src={process.env.PUBLIC_URL + hasCustomImageURL} className="ContentStyle" style={{ paddingLeft: '4px', paddingRight: '4px', paddingTop: '6px', paddingBottom: '6px', }} />
+                <Card.Img width="600" height="310" variant="top" src={process.env.PUBLIC_URL + hasCustomImageURL} className="ContentStyle" style={{ paddingLeft: '4px', paddingRight: '4px', paddingTop: '6px', paddingBottom: '6px', }} />
             );
         }
         else {
             console.log("No Links yet, displaying comingSoonIMG");
 
             return (
-                <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/ProjectImages/coming-soon.png"} className="ContentStyle" style={{   paddingLeft: '4px', paddingRight: '4px', paddingTop: '6px', paddingBottom: '6px', }} />
+                <Card.Img width="600" height="310" variant="top" src={process.env.PUBLIC_URL + "/Images/ProjectImages/defaultProjectImage.png"} className="ContentStyle" style={{   paddingLeft: '4px', paddingRight: '4px', paddingTop: '6px', paddingBottom: '6px', }} />
             );
         }
 
