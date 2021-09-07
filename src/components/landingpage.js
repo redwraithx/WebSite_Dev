@@ -44,11 +44,7 @@ class Landing extends Component {
 
                 </div>
 
-                
-
               </div>
-
-              <i className="fa fa-linkedin-square"  />
 
               <div className="social-links">
 
