@@ -7,7 +7,7 @@ class Landing extends Component {
 
   render() {
     return(
-      <div style={{width: '100%', margin: 'auto'}} scroll>
+      <div style={{width: '100%', height: 'auto', margin: 'auto'}} scroll >
         <Grid className="landing-grid">
           <Cell col={12}>
             
@@ -15,14 +15,12 @@ class Landing extends Component {
             
 
             <div className="banner-text">
-              <h1>Video Game Programming and Design</h1>
+              <h2>Video Game Programming and Design</h2>
             
-              <hr />
-
-              <p>[ C# | <img src={process.env.PUBLIC_URL + "/Images/Icons/unityIcon32x32.png"} alt="Unity Logo Image" /> Unity3D | C++ | <img src={process.env.PUBLIC_URL + "/Images/Icons/unrealIcon32x32.png"} alt="Unreal Logo Image" /> Unreal ]</p>
 
 
-              <div style={{ padding: '10px' }}>
+
+              <div style={{ padding: '10px', overflow: 'auto', paddingTop: '2px' }} >
                 <div style={{ padding: '20px', textAlign: 'left', color: 'gray' }}>
 
                   <h5><u>About Me</u></h5>
@@ -37,7 +35,7 @@ class Landing extends Component {
                 <div style={{ padding: '20px', textAlign: 'left', color: 'gray' }}>
 
                   <h5><u>My Role with our Capstone Project</u></h5>
-                  
+
                   I was the Programming Director and assisted the programmers in code or with design direction. 
                   I was also the sole Networking programmer.
                   Working as a team in several roles, I helped create multiple game play systems including the machines, 
@@ -45,15 +43,19 @@ class Landing extends Component {
 
 
                 </div>
+
+                
+
               </div>
 
-
+              <i className="fa fa-linkedin-square"  />
 
               <div className="social-links">
 
                 {/* LinkedIn */}
                 <a href="https://www.linkedin.com/in/brianpurdy01" rel="noopener noreferrer" target="_blank">
-                  <i class="SocialMediaLinks" className="fa fa-linkedin-square" aria-hidden="true" aria-label="View my LinkedIn" />
+                  <img src={process.env.PUBLIC_URL + "/Images/SocialIcons/linkedin_512_512_white.png"} height="32px" width="32px" className="SocialMediaLinks" alt="LinkedIn Image Icon" />
+                  {/* <i className="fa fa-linkedin-square SocialMediaLinks" aria-hidden="true" aria-label="View my LinkedIn" /> */ }
                 </a>
               
                 {/* Github */}
@@ -70,9 +72,9 @@ class Landing extends Component {
             </div>
           </Cell>
         </Grid>
-        <div style={{ paddingTop: '200px' }} />
+        <div style={{ paddingTop: '30px' }} />
 
-          <Footer size="2" style={{  position: 'absolute', left: '0', bottom: '0', right: '0', color: '#4e4e4e' }}>
+          <Footer size="2" style={{   }}>
             <div align="center">BrianPurdy.ca @ 2021, best viewed @ 1920x1080 resolution.</div>
           </Footer>
         

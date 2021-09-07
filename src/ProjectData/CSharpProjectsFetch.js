@@ -12,7 +12,7 @@ const CSharpProjectsFetch = () => {
 
     const projectInfo = [
         { gameName: 'RPG World', engineName: 'Unity', codeLanguage: 'C#', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'This is a game description', videoURL: '',  imgURL: '', gitHubURL: 'http://github.com/', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
-        { gameName: 'RPG World', engineName: 'Unity', codeLanguage: 'C#', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'This is a game description', videoURL: '',  imgURL: '', gitHubURL: 'http://github.com/', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
+        { gameName: 'RPG World', engineName: 'Unity', codeLanguage: 'C#', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'A Solar system is something to be had, controlled and beloved by all, dont you think." This is just a sample of a beautiful thing!', videoURL: '7axImc1sxa0',  imgURL: '', gitHubURL: 'http://github.com/', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
 
     ];
 
@@ -66,7 +66,7 @@ const CSharpProjectsFetch = () => {
                     <div className="ContentTextStyle ContentStyle" style={{ height: '16rem' }}>
                         Game Engine: {project.engineName}<br />
                         Code Language: {project.codeLanguage}<br />
-                        Development Months: {project.numberOfMonthsToCreate}<br />
+                        Months in Development: {project.numberOfMonthsToCreate}<br />
                         Developed by: {project.createdBy}<br /><br />
                     
                         Description: {project.description}<br />

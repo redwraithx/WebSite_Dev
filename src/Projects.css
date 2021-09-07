@@ -57,3 +57,17 @@
     font-weight: bolder;
     font-size: larger;
   }
+
+  .iconNameBox {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    
+  }
+
+  .ProjectsMouseOver:hover {
+    background-color: gray;
+  }
