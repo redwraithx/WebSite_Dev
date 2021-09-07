@@ -29,7 +29,7 @@ hr {
   }
 
 
-.SocialMediaLinks i {
+.SocialMediaLinks {
     justify-content:space-around !important;
     border-style: none;
     border-radius: 20px 20px 20px 20px !important;
@@ -37,12 +37,12 @@ hr {
     
 }
 
-.SocialMediaLinks i:hover{
+.SocialMediaLinks:hover {
     justify-content:space-around !important;
     border-style: none;
-    border-radius: 20px 20px 20px 20px !important;
-    background-color: slateblue !important;
-    
+    border-radius: 10px 10px 10px 10px !important;
+    background-color: darkgray !important;
+    color: black;
 }
 
 footer {

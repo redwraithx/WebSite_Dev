@@ -70,7 +70,7 @@ class Landing extends Component {
             </div>
           </Cell>
         </Grid>
-        <div style={{ paddingTop: '30px' }} />
+        <div style={{ paddingTop: '20px' }} />
 
           <Footer size="2" style={{   }}>
             <div align="center">BrianPurdy.ca @ 2021, best viewed @ 1920x1080 resolution.</div>
