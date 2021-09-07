@@ -55,8 +55,8 @@ class Landing extends Component {
                 </a>
               
                 {/* Github */}
-                <a href="https://github.com/redwraithx/" rel="noopener noreferrer" target="_blank">
-                  <img src={process.env.PUBLIC_URL + "/Images/SocialIcons/github_512x512_white.png"} height="64px" width="64px" className="SocialMediaLinks" alt="LinkedIn Image Icon" />
+                <a href="https://github.com/redwraithx/" rel="noopener noreferrer" target="_blank" className="SocialMediaLinks" >
+                  <img src={process.env.PUBLIC_URL + "/Images/SocialIcons/github_512x512_white.png"} height="64px" width="64px" alt="LinkedIn Image Icon" />
                   {/* <i className="fa fa-github-square" aria-hidden="true" aria-label="View my github"  /> */}
                 </a>
 

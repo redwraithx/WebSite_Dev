@@ -29,6 +29,8 @@ hr {
   }
 
 
+
+
 .SocialMediaLinks {
     justify-content:space-around !important;
     border-style: none;
@@ -41,8 +43,8 @@ hr {
     justify-content:space-around !important;
     border-style: none;
     border-radius: 10px 10px 10px 10px !important;
-    background-color: darkgray !important;
-    color: black;
+    background-color: slategray !important;
+    
 }
 
 footer {
