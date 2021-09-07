@@ -54,7 +54,7 @@ class Landing extends Component {
 
                 {/* LinkedIn */}
                 <a href="https://www.linkedin.com/in/brianpurdy01" rel="noopener noreferrer" target="_blank">
-                  <img src={process.env.PUBLIC_URL + "/Images/SocialIcons/linkedin_512_512_white.png"} height="32px" width="32px" className="SocialMediaLinks" alt="LinkedIn Image Icon" />
+                  <img src={process.env.PUBLIC_URL + "/Images/SocialIcons/linkedin_512x512_white.png"} height="32px" width="32px" className="SocialMediaLinks" alt="LinkedIn Image Icon" />
                   {/* <i className="fa fa-linkedin-square SocialMediaLinks" aria-hidden="true" aria-label="View my LinkedIn" /> */ }
                 </a>
               

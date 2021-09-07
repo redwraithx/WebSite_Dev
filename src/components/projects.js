@@ -66,7 +66,7 @@ class Projects extends Component {
           <Tabs activeTab={this.state.activeTab} onChange={  (tabId) => this.setState({ activeTab: tabId }) } style={{ flex: '1', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} >
             
             <Tab style={ { justifyContent: 'left', border: '1px solid #001f54' ,top: '0', left: '0', padding: '0', margin: '0', width: '100px', fontSize: '80%', fontWeight: 'bolder', color: ( this.state.activeTab === 0 ) ? 'black' : 'lightgray', background: ( this.state.activeTab === 0) ? 'darkgray' : 'rgb(40, 41, 94)' } } >
-                <img src={process.env.PUBLIC_URL + "/Images/Icons/unityIcon32x32.png"} alt="Unity Logo Image" style={{ height: '14px', width: '14px' }} /> Unity
+                <img src={process.env.PUBLIC_URL + "/Images/MyIcons/unityIcon32x32.png"} alt="Unity Logo Image" style={{ height: '14px', width: '14px' }} /> Unity
             </Tab>
 
             <Tab style={ { border: '1px solid #001f54' ,top: '0', left: '0', width: '100px', fontSize: '80%', fontWeight: 'bolder', color: ( this.state.activeTab === 1 ) ? 'black' : 'lightgray', background: ( this.state.activeTab === 1) ? 'darkgray' : 'rgb(40, 41, 94)' } } >C#</Tab>
@@ -74,7 +74,7 @@ class Projects extends Component {
             <Tab style={ { border: '1px solid #001f54' ,top: '0', left: '0', width: '100px', fontSize: '80%', fontWeight: 'bolder', color: ( this.state.activeTab === 2 ) ? 'black' : 'lightgray', background: ( this.state.activeTab === 2) ? 'darkgray' : 'rgb(40, 41, 94)' } } >C++</Tab>
 
             <Tab style={ { justifyContent: 'left', border: '1px solid #001f54' ,top: '0', left: '0', padding: '0', margin: '0', width: '100px', fontSize: '80%', fontWeight: 'bolder', color: ( this.state.activeTab === 3 ) ? 'black' : 'lightgray', background: ( this.state.activeTab === 3) ? 'darkgray' : 'rgb(40, 41, 94)' } } >
-              <img src={process.env.PUBLIC_URL + "/Images/Icons/unrealIcon32x32.png"} alt="Unreal Logo Image" style={{ height: '14px', width: '14px' }} /> Unreal
+              <img src={process.env.PUBLIC_URL + "/Images/MyIcons/unrealIcon32x32.png"} alt="Unreal Logo Image" style={{ height: '14px', width: '14px' }} /> Unreal
             </Tab>
 
           </Tabs>
