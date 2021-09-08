@@ -12,11 +12,7 @@ class Resume extends Component {
         <Grid>
           <Cell col={4}>
             <div style={{textAlign: 'center' }} scroll >
-              <img
-                src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
-                alt="avatar"
-                style={{height: '200px'}}
-                 />
+              
             </div>
 
             <h2 className="ResumeTextColor" style={{paddingTop: '2em'}}>Brian Purdy</h2>
@@ -71,19 +67,19 @@ class Resume extends Component {
               <hr style={{borderTop: '3px solid #e22947'}} />
               <h2>Skills</h2>
               <Skills
-                skill="javascript"
-                progress={100}
+                skill="Unity"
+                progress={65}
                 />
                 <Skills
-                  skill="HTML/CSS"
-                  progress={80}
+                  skill="C#"
+                  progress={50}
                   />
                   <Skills
-                    skill="NodeJS"
-                    progress={50}
+                    skill="C++"
+                    progress={40}
                     />
                     <Skills
-                      skill="React"
+                      skill="Unreal"
                       progress={25}
                       />
 
