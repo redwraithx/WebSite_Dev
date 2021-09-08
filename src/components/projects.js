@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Tabs, Tab } from 'react-mdl';
-import CSharpProjectsFetch from '../ProjectData/CSharpProjectsFetch';
+import UnityProjectsFetchClass from '../ProjectData/UnityProjectsFetchClass';
+import CSharpProjectsFetchClass from '../ProjectData/CSharpProjectsFetchClass';
+import CppProjectsFetchClass from '../ProjectData/CppProjectsFetchClass';
+import UnrealProjectsFetchClass from '../ProjectData/UnrealProjectsFetchClass';
 import '.././Projects.css';
 
 
@@ -18,9 +21,9 @@ class Projects extends Component {
 
     if(this.state.activeTab === 0) {
       return(
-        <div style={{width: 'auto', height: 'auto', margin: 'auto'}} scroll>
+        <div  style={{ alignContent: 'center', justifyContent: 'center', background: 'repeat linear-gradient(to right, #1d2d44, #001f54, #1d2d44)', backgroundAttachment: 'fixed' }} > 
 
-          <h3>Unity page</h3>
+          <UnityProjectsFetchClass />
 
         </div>
       )
@@ -29,21 +32,23 @@ class Projects extends Component {
         
         <div  style={{ alignContent: 'center', justifyContent: 'center', background: 'repeat linear-gradient(to right, #1d2d44, #001f54, #1d2d44)', backgroundAttachment: 'fixed' }} > 
 
-          <CSharpProjectsFetch />
+          <CSharpProjectsFetchClass />
 
         </div>
       )
     } else if(this.state.activeTab === 2) {
       return (
-        <div>
-          <h3>C++ page</h3>
+        <div  style={{ alignContent: 'center', justifyContent: 'center', background: 'repeat linear-gradient(to right, #1d2d44, #001f54, #1d2d44)', backgroundAttachment: 'fixed' }} > 
+
+          <CppProjectsFetchClass />
 
         </div>
       )
     } else if(this.state.activeTab === 3) {
       return (
-        <div>
-          <h3>Unreal page</h3>
+        <div  style={{ alignContent: 'center', justifyContent: 'center', background: 'repeat linear-gradient(to right, #1d2d44, #001f54, #1d2d44)', backgroundAttachment: 'fixed' }} > 
+
+          <UnrealProjectsFetchClass />
 
         </div>
       )

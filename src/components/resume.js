@@ -8,7 +8,7 @@ import '.././Resume.css';
 class Resume extends Component {
   render() {
     return(
-      <div className="BackGround-DivColor">
+      <div className="BackGround-DivColor ResumeTextColor">
         <Grid>
           <Cell col={4}>
             <div style={{textAlign: 'center' }} scroll >
@@ -32,7 +32,7 @@ class Resume extends Component {
             <p>brianpurdy@live.com</p>
             <h5>Web</h5>
             <p><a href="brianpurdy.ca">BrianPurdy.ca</a></p>
-            <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
+            <hr style={{ justifySelf: 'center', borderTop: '3px solid #833fb2', width: '50%'}}/>
           </Cell>
           <Cell className="resume-right-col" col={8}>
             <h2>Education</h2>
