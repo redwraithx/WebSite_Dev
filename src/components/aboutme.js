@@ -10,14 +10,9 @@ class About extends Component {
         <Grid className="aboutme-grid">
          
 
-          <div>
-            <h1 style={{ color: 'white', justifyContent: 'space-around', textAlign: 'center', paddingBottom: '50px' }}>About Page</h1>
-            <img src={process.env.PUBLIC_URL + "/Images/Me/MyImage.png"} width="60px" height="75px" />
-          </div>
-
-
             <div className="TestStyle" style={{ padding: '20px', textAlign: 'left' }}>
 
+            <img src={process.env.PUBLIC_URL + "/Images/Me/MyImage.png"} width="70px" height="75px" style={{ alignSelf: 'left', marginBottom: '30px' }} />
               
               <h5><u>About Me</u></h5>
               
