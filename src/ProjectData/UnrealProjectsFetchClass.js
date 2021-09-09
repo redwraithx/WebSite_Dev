@@ -12,9 +12,6 @@ const UnrealProjectsFetchClass = () => {
 
     const projectInfo = [
         { gameName: 'RPG World', engineName: 'Unity', codeLanguage: 'C#', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'A Solar system is something to be had, controlled and beloved by all, dont you think." This is just a sample of a beautiful thing!', videoURL: '7axImc1sxa0',  imgURL: '', gitHubURL: 'http://github.com/', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
-        { gameName: 'RPG World', engineName: 'Unity', codeLanguage: 'C#', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'A Solar system is something to be had, controlled and beloved by all, dont you think." This is just a sample of a beautiful thing!', videoURL: '7axImc1sxa0',  imgURL: '', gitHubURL: 'http://github.com/', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
-        { gameName: 'RPG World', engineName: 'Unity', codeLanguage: 'C#', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'A Solar system is something to be had, controlled and beloved by all, dont you think." This is just a sample of a beautiful thing!', videoURL: '7axImc1sxa0',  imgURL: '', gitHubURL: 'http://github.com/', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
-        { gameName: 'RPG World', engineName: 'Unity', codeLanguage: 'C#', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'A Solar system is something to be had, controlled and beloved by all, dont you think." This is just a sample of a beautiful thing!', videoURL: '7axImc1sxa0',  imgURL: '', gitHubURL: 'http://github.com/', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
 
     ];
 

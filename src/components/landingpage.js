@@ -43,19 +43,19 @@ class Landing extends Component {
 
                 {/* LinkedIn */}
                 <a href="https://www.linkedin.com/in/brianpurdy01" rel="noopener noreferrer" target="_blank">
-                  <img src={process.env.PUBLIC_URL + "/Images/SocialIcons/linkedin_512x512_white.png"} height="64px" width="64px" className="SocialMediaLinks" alt="LinkedIn Image Icon" />
+                  <img src={process.env.PUBLIC_URL + "/Images/SocialIcons/linkedin_512x512_white.png"} height="50px" width="50px" className="SocialMediaLinks" alt="LinkedIn Image Icon" />
                   {/* <i className="fa fa-linkedin-square SocialMediaLinks" aria-hidden="true" aria-label="View my LinkedIn" /> */ }
                 </a>
               
                 {/* Github */}
                 <a href="https://github.com/redwraithx/" rel="noopener noreferrer" target="_blank" className="SocialMediaLinks" >
-                  <img src={process.env.PUBLIC_URL + "/Images/SocialIcons/github_512x512_white.png"} height="64px" width="64px" alt="LinkedIn Image Icon" />
+                  <img src={process.env.PUBLIC_URL + "/Images/SocialIcons/github_512x512_white.png"} height="50px" width="50px" alt="LinkedIn Image Icon" />
                   {/* <i className="fa fa-github-square" aria-hidden="true" aria-label="View my github"  /> */}
                 </a>
 
                 {/* Youtube */}
                 <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                  <img src={process.env.PUBLIC_URL + "/Images/SocialIcons/youtube_512x512_white.png"} height="64px" width="64px" className="SocialMediaLinks" alt="LinkedIn Image Icon" />
+                  <img src={process.env.PUBLIC_URL + "/Images/SocialIcons/youtube_512x512_white.png"} height="50px" width="50px" className="SocialMediaLinks" alt="LinkedIn Image Icon" />
                   {/* <i className="fa fa-youtube-square" aria-hidden="true" aria-label="View my Youtube"  /> */}
                 </a>
 
