@@ -4,6 +4,7 @@ import UnityProjectsFetchClass from '../ProjectData/UnityProjectsFetchClass';
 import CSharpProjectsFetchClass from '../ProjectData/CSharpProjectsFetchClass';
 import CppProjectsFetchClass from '../ProjectData/CppProjectsFetchClass';
 import UnrealProjectsFetchClass from '../ProjectData/UnrealProjectsFetchClass';
+import OtherProjectsFetchClass from '../ProjectData/OtherProjectsFetchClass';
 import '.././Projects.css';
 
 
@@ -52,6 +53,14 @@ class Projects extends Component {
 
         </div>
       )
+    } else if(this.state.activeTab === 4) {
+      return (
+        <div  style={{ alignContent: 'center', justifyContent: 'center', background: 'repeat linear-gradient(to right, #1d2d44, #001f54, #1d2d44)', backgroundAttachment: 'fixed' }} > 
+
+          <OtherProjectsFetchClass />
+
+        </div>
+      )
     }
 
   }
@@ -81,6 +90,8 @@ class Projects extends Component {
             <Tab style={ { justifyContent: 'left', border: '1px solid #001f54' ,top: '0', left: '0', padding: '0', margin: '0', width: '100px', fontSize: '80%', fontWeight: 'bolder', color: ( this.state.activeTab === 3 ) ? 'black' : 'lightgray', background: ( this.state.activeTab === 3) ? 'darkgray' : 'rgb(40, 41, 94)' } } >
               <img src={process.env.PUBLIC_URL + "/Images/MyIcons/unrealIcon32x32.png"} alt="Unreal Logo Image" style={{ height: '14px', width: '14px' }} /> Unreal
             </Tab>
+
+            <Tab style={ { border: '1px solid #001f54' ,top: '0', left: '0', width: '100px', fontSize: '80%', fontWeight: 'bolder', color: ( this.state.activeTab === 3 ) ? 'black' : 'lightgray', background: ( this.state.activeTab === 3) ? 'darkgray' : 'rgb(40, 41, 94)' } } >Misc</Tab>
 
           </Tabs>
 

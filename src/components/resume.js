@@ -81,7 +81,7 @@ class Resume extends Component {
                 skill="Unreal"
                 progress={25}
               />
-
+              
 
           </Cell>
         </Grid>
