@@ -91,7 +91,7 @@ class Projects extends Component {
               <img src={process.env.PUBLIC_URL + "/Images/MyIcons/unrealIcon32x32.png"} alt="Unreal Logo Image" style={{ height: '14px', width: '14px' }} /> Unreal
             </Tab>
 
-            <Tab style={ { border: '1px solid #001f54' ,top: '0', left: '0', width: '100px', fontSize: '80%', fontWeight: 'bolder', color: ( this.state.activeTab === 3 ) ? 'black' : 'lightgray', background: ( this.state.activeTab === 3) ? 'darkgray' : 'rgb(40, 41, 94)' } } >Misc</Tab>
+            <Tab style={ { border: '1px solid #001f54' ,top: '0', left: '0', width: '100px', fontSize: '80%', fontWeight: 'bolder', color: ( this.state.activeTab === 4 ) ? 'black' : 'lightgray', background: ( this.state.activeTab === 4) ? 'darkgray' : 'rgb(40, 41, 94)' } } >Misc</Tab>
 
           </Tabs>
 

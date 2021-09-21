@@ -11,10 +11,7 @@ import './GetVideo.css';
 const CppProjectsFetchClass = () => {
 
     const projectInfo = [
-        { gameName: 'RPG World', engineName: 'C++', codeLanguage: 'C++', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'This is a game description', videoURL: '',  imgURL: '', gitHubURL: 'http://github.com/', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
-        { gameName: 'RPG World', engineName: 'C++', codeLanguage: 'C++', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'A Solar system is something to be had, controlled and beloved by all, dont you think." This is just a sample of a beautiful thing!', videoURL: '7axImc1sxa0',  imgURL: '', gitHubURL: 'http://github.com/', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
-        { gameName: 'RPG World', engineName: 'C++', codeLanguage: 'C++', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'A Solar system is something to be had, controlled and beloved by all, dont you think." This is just a sample of a beautiful thing!', videoURL: '7axImc1sxa0',  imgURL: '', gitHubURL: 'http://github.com/', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
-        { gameName: 'RPG World', engineName: 'C++', codeLanguage: 'C++', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'A Solar system is something to be had, controlled and beloved by all, dont you think." This is just a sample of a beautiful thing!', videoURL: '7axImc1sxa0',  imgURL: '', gitHubURL: 'http://github.com/', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
+        { gameName: 'Console RPG', engineName: 'C++ Console App', codeLanguage: 'C++', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'This console game is like a Dungeons & Dragons style game, with classes/races various levels, equipment customized per class and a open map like sytem. give it try you may find its better then you think.', videoURL: '',  imgURL: '', gitHubURL: 'https://github.com/redwraithx/ConsoleRPG', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
 
     ];
 

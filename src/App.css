@@ -168,6 +168,14 @@
     
   }
 
+  .Nav-Links ::selection {
+    justify-content: space-around !important;
+    background: mediumslateblue !important;
+    color: black !important;
+    font-size: larger !important;
+    font-weight: bolder !important;
+    
+  }
 
 }
 

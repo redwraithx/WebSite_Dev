@@ -7,7 +7,7 @@ class Landing extends Component {
 
   render() {
     return(
-      <div style={{width: '100%', height: 'auto', margin: 'auto'}} scroll >
+      <div style={{width: '100%', height: 'auto', marginTop: '2em' }} scroll >
         <Grid className="landing-grid">
           <Cell col={12}>
             
@@ -23,16 +23,16 @@ class Landing extends Component {
               <div style={{ padding: '10px', overflow: 'auto', paddingTop: '2px' }} >
                 <div style={{ padding: '20px', textAlign: 'left', color: 'gray' }}>
 
-                  <h5><u>My journey</u></h5>
-
-                    write stuff here
-
+                  <h5 className="landingContentHeader"><u>My Current Project</u></h5>
+                  <p className="landingContentBody">
+                  <u>9/21/2021</u>:<br /> Working on a game called "A Knights Journey". This game will be a 3rd person game using kinematic characters where I will be dealing with all the physics myself except for any static characters such as castle guards which do not interact with the world except to turn away the player if approached.
+                  </p>
                 </div>
                 <div style={{ padding: '20px', textAlign: 'left', color: 'gray' }}>
 
-                  <h5><u>Recent Project updates</u></h5>
+                  <h5 className="landingContentHeader"><u>Recent Project updates</u></h5>
 
-                  write stuff here with dates and projectnames
+                    <b><u>Wash Out Update</u></b>: Bug fixes for network interactions and updated player binary save data for future use.
 
 
                 </div>
@@ -63,7 +63,7 @@ class Landing extends Component {
             </div>
           </Cell>
         </Grid>
-        <div style={{ paddingTop: '20px' }} />
+        <div style={{ paddingTop: '10px' }} />
 
           <hr style={{  }} />
 

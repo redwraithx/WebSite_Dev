@@ -11,7 +11,7 @@ import './GetVideo.css';
 const UnrealProjectsFetchClass = () => {
 
     const projectInfo = [
-        { gameName: 'RPG World', engineName: 'Unity', codeLanguage: 'C#', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'A Solar system is something to be had, controlled and beloved by all, dont you think." This is just a sample of a beautiful thing!', videoURL: '7axImc1sxa0',  imgURL: '', gitHubURL: 'http://github.com/', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
+        { gameName: 'Turret Blaster', engineName: 'Unreal', codeLanguage: 'C++ & Blueprints', numberOfMonthsToCreate: 3, createdBy: 'Brian Purdy', description: 'This is a time based game where you run around with rifle in hand and destroy all the turrents in the given and win the game. ', videoURL: '',  imgURL: '', gitHubURL: 'https://github.com/redwraithx/TurretBlaster', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
 
     ];
 

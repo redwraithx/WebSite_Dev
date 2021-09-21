@@ -2,12 +2,13 @@
     color: white;
     border-radius: 20%;
     border-bottom: 4px groove darkblue;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 hr {
     border-style: groove !important;
 }
-
 
 .social-links {
     display: flex;
@@ -18,7 +19,7 @@ hr {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  
+
   .social-links i {
     border-radius: 20%;
     border-left: 4px groove darkblue;
@@ -28,22 +29,18 @@ hr {
     margin-bottom: 10px;
   }
 
-
-
-
 .SocialMediaLinks {
     justify-content:space-around !important;
     border-style: none;
     border-radius: 20px 20px 20px 20px !important;
 
-    
 }
 
 .SocialMediaLinks:hover {
     justify-content:space-around !important;
     border-style: none;
-    border-radius: 10px 10px 10px 10px !important;
-    background-color: slategray !important;
+    border-radius: 2px 2px 2px 2px !important;
+    background-color: indigo !important;
     
 }
 
