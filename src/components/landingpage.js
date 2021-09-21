@@ -65,6 +65,9 @@ class Landing extends Component {
         </Grid>
         <div style={{ paddingTop: '20px' }} />
 
+          <hr style={{  }} />
+
+
           <Footer size="2" style={{   }}>
             <div align="center">BrianPurdy.ca @ 2021, best viewed @ 1920x1080 resolution.</div>
           </Footer>

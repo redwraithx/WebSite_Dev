@@ -11,7 +11,7 @@ import './GetVideo.css';
 const OtherProjectsFetchClass = () => {
 
     const projectInfo = [
-        { gameName: 'Network COM Room Tester', engineName: 'C# WinAPP', codeLanguage: 'C#', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'This was used to test communication rooms for there online state during thier construction.', videoURL: '',  imgURL: '', gitHubURL: 'http://github.com/', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
+        { gameName: 'Willands Tomb', engineName: 'Construct', codeLanguage: 'Construct', numberOfMonthsToCreate: 3, createdBy: 'Brian Purdy', description: 'You play an investicator whom fell into an old tomb while searching for a Dr. Willand and triped an ancient trap... now you must escape with your life if you can.', videoURL: '',  imgURL: '', gitHubURL: 'http://github.com/redwraithx/', playOrDownloadURL: 'https://redwraithx.itch.io/willandstomb-final', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
 
     ];
 
