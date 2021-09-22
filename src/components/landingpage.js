@@ -21,19 +21,77 @@ class Landing extends Component {
 
 
               <div style={{ padding: '10px', overflow: 'auto', paddingTop: '2px' }} >
-                <div style={{ padding: '20px', textAlign: 'left', color: 'gray' }}>
+                <div style={{ padding: '20px', textAlign: 'left', color: 'grey' }}>
+
+                  {/* Start Entry */}
+                  { /*
+                  <div style={{ marginBottom: '15px' }}>
+                    <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
+                      <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;A Knights Journey&nbsp;&nbsp;</div>
+                      <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 9/21/2021 ]</div>
+                    </div>
+                    <div style={{ display: 'grid' }}>
+                      <div className="landingContentBody"  >Body</div>
+                      <div style={{ display: 'inline', border: '1px solid magenta', justifyContent: 'right',  }}>
+                        <a className="landingContentInlineImages">Image1</a>
+                        <a className="landingContentInlineImages">Image2</a>
+                        <a className="landingContentInlineImages">Image3</a>
+                      </div>
+                    </div>
+                  </div>
+                  */ }
+                  {/* End Entry */}
+
+
+                  {/* Start Entry */}
+                  <div style={{ marginBottom: '15px' }}>
+                    <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
+                      <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;A Knights Journey&nbsp;&nbsp;</div>
+                      <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 9/21/2021 ]</div>
+                    </div>
+                    <div style={{ display: 'grid' }}>
+                      <div className="landingContentBody" >
+                        Working on a game called "A Knights Journey". This game will be a 3rd person game using kinematic characters where I will be dealing with all the physics myself except for any static characters such as castle guards which do not interact with the world except to turn away the player if approached.
+                      </div>
+                      <div style={{ display: 'inline', border: '1px solid magenta', justifyContent: 'space-between' }}>
+                        <a className="landingContentInlineImages">Image1</a>
+                        <a className="landingContentInlineImages">Image2</a>
+                        <a className="landingContentInlineImages">Image3</a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* End Entry */}
+
+                  <div style={{ marginBottom: '15px' }}>
+                    <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
+                      <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;Wash Out game update&nbsp;&nbsp;</div>
+                      <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 9/17/2021 ]</div>
+                    </div>
+                    <div style={{ display: 'grid' }}>
+                      <div className="landingContentBody" > 
+                        Bug fixes for network interactions and updated player binary save data for future use.
+                      </div>
+                      <div className="landingContentImagesFrame" style={{  border: '1px solid magenta'  }} >
+                        <a className="landingContentInlineImages">Image1</a>
+                        <a className="landingContentInlineImages">Image2</a>
+                        <a className="landingContentInlineImages">Image3</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+
 
                   <h5 className="landingContentHeader"><u>My Current Project</u></h5>
-                  <p className="landingContentBody">
-                  <u>9/21/2021</u>:<br /> Working on a game called "A Knights Journey". This game will be a 3rd person game using kinematic characters where I will be dealing with all the physics myself except for any static characters such as castle guards which do not interact with the world except to turn away the player if approached.
-                  </p>
+                  <div className="landingContentBody">
+                    <u>9/21/2021</u>:<br />Working on a game called "A Knights Journey". This game will be a 3rd person game using kinematic characters where I will be dealing with all the physics myself except for any static characters such as castle guards which do not interact with the world except to turn away the player if approached.
+                  </div>
                 </div>
                 <div style={{ padding: '20px', textAlign: 'left', color: 'gray' }}>
 
                   <h5 className="landingContentHeader"><u>Recent Project updates</u></h5>
-
+                  <div className="landingContentBody">
                     <b><u>Wash Out Update</u></b>: Bug fixes for network interactions and updated player binary save data for future use.
-
+                  </div>
 
                 </div>
 

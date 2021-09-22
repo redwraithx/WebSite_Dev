@@ -6,19 +6,30 @@ import { Link } from 'react-router-dom';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 
 
+const menuItems = [
+  'Home',
+  'Resume',
+  'About Me',
+  'Projects',
+  'Contact'
+];
+
 
 class App extends Component {
   constructor(props) {
     super(props);
     
-    
+    this.state = { activeTab: 0 };
   }
   
+  
 
-
-
+    
 
   render() {
+
+    const activeStyle = { color: 'lightgrey' };
+
     return (
       <div className="app-content">
 
@@ -39,8 +50,11 @@ class App extends Component {
 
   
             <Navigation className="Nav-MainBar">  
-                <Link to='/' className="Nav-Links">Home</Link>
-                <Link to='/resume' className="Nav-Links">Resume</Link>
+                <Link 
+                style={ this.state.activeTab === 0 ? activeStyle : {} } 
+                //onClick={ this.setState({ activeTab: 0 }) } 
+                to='/' className="Nav-Links">Home</Link>
+                <Link to='/resume' className="Nav-Links" >Resume</Link>
                 <Link to='/aboutme' className="Nav-Links">About Me</Link>
                 <Link to='/projects' className="Nav-Links">Projects</Link>
                 <Link to='/contact' className="Nav-Links">Contact</Link>
