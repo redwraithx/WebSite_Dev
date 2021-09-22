@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Grid, Cell, Footer } from 'react-mdl';
 import '.././Landing.css';
 
+const tempImage = "/Images/ProjectImages/defaultProjectImage.png";
 
 class Landing extends Component {
 
@@ -72,9 +73,13 @@ class Landing extends Component {
                         Bug fixes for network interactions and updated player binary save data for future use.
                       </div>
                       <div className="landingContentImagesFrame" style={{  border: '1px solid magenta'  }} >
-                        <a className="landingContentInlineImages">Image1</a>
-                        <a className="landingContentInlineImages">Image2</a>
-                        <a className="landingContentInlineImages">Image3</a>
+                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
+                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
+                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
+                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
+                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
+                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
+                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
                       </div>
                     </div>
                   </div>
