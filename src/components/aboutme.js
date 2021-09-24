@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
+import { Grid, Footer, Cell, List, ListItem, ListItemContent } from 'react-mdl';
 import '.././AboutMe.css';
 
 class About extends Component {
@@ -9,61 +9,77 @@ class About extends Component {
         
         <Grid className="aboutme-grid">
          
-          <div className="TestStyle" style={{ paddingTop: '0px', marginTop: '10px', marginRight: '80%' , marginLeft: '0%', marginBottom: '30px', textAlign: 'left', border: '1px solid magenta' }}>
+          <div className="aboutMeEntryStyle1" style={{ border: '0px none' }}>
             <img src={process.env.PUBLIC_URL + "/Images/Me/MyImage.png"} width="180px" height="200px" style={{ alignSelf: 'left' }} />    
           </div>
 
-            <div className="TestStyle" style={{ padding: '20px', marginRight: '35%' , marginLeft: '5%', marginBottom: '15px', textAlign: 'left', border: '1px solid magenta' }}>
+            <div className="aboutMeEntryStyle1" style={{  }}>
+              
+              <h5 className="aboutMeEntryHeader" ><u>About Me</u></h5>
+              
+              I am a recent graduate of the Toronto Film School where I received a Diploma in Video Game Programming and Designer.<br />
+              Currently searching for work where being a part of a team means delivering great games and content to people who love to Game!<br />
+              I dream of being a part of a company that inspire the next generation of players and programmers alike while making great games.<br />
+              As someone committed to self-growth and ongoing learning, I am currently working on programming a new game having turned off the internal game physics. 
+              All the physics is kinematically programmed and the game is using state-based AI.<br />
 
+            </div>
+            <div className="aboutMeEntryStyle2" style={{  }}>
+
+              <h5 className="aboutMeEntryHeader" ><u>My Role with our Capstone Project: Wash Off</u></h5>
+
+              I was the Programming Director/Network programmer/General GamePlay programmer and assisted the programmers in code or with design direction.<br />
+              As the sole Networking programmer, I had a steep hill to climb but I did preveil with a lot of research and experimentation.<br />
+              I was also the sole Networking programmer.<br />
+              Working as a team in several roles, I helped create multiple game play systems including the machines, the item and item-grab programming, the game and audio manager, and the level manager,
+
+
+            </div>
+
+            <div className="aboutMeEntryStyle1" style={{  }}>
+              
+              <h5 className="aboutMeEntryHeader" ><u>Recent Work</u></h5>
+              
+              I use to work as an I.T. Junior Systems Administrator at the N.S Halifax Convention Centre.<br />
+              This is where I really started to use my skills to make some of the everyday tasks I did more automated through little applications, like the network COM Room tester app in my c# projects.<br />
+              This saved me time, when I had to run around checking 23 different communication rooms to make sure they were online.<br />
+              I did this while we were still sourcing a network management solution and during the new buildings construction.<br />
+              When my contract was up I decided that I was going to follow my heart and transition into game development.<br />
+              This has been a great experience to not only learn from others who have worked in big and small studios, but also to lend my experiences and help those that are just starting out as well.<br />
+
+            </div>
+
+
+
+
+
+            <div className="aboutMeEntryStyle2" style={{  }} hidden>
+
+              <h5 className="aboutMeEntryHeader" ><u>My Role with our Capstone Project</u></h5>
+
+              I was the Programming Director and assisted the programmers in code or with design direction. 
+              I was also the sole Networking programmer.
+              Working as a team in several roles, I helped create multiple game play systems including the machines, 
+              the item and item-grab programming, the game and audio manager, and the level manager, 
+
+            </div>
             
-              
-              <h5><u>About Me</u></h5>
-              
-                I am a recent graduate of the Toronto Film School where I received a Diploma in Game Programming and Design. 
-                I am searching for work where being a part of a team means delivering great games and content to people who love to Game!  
-                I dream of being a part of a company that creates games that inspire the next generation of players and programmers.
-                As someone committed to self-growth and ongoing learning, I am currently working on programming a new game having turned off the internal game physics. 
-                All the physics is kinematically programmed and the game is state-based AI.
-
-            </div>
-            <div className="TestStyle" style={{ padding: '20px', marginRight: '40%' , marginLeft: '0%', marginBottom: '15px', textAlign: 'left', border: '1px solid magenta' }}>
-
-              <h5><u>My Role with our Capstone Project</u></h5>
-
-              I was the Programming Director and assisted the programmers in code or with design direction. 
-              I was also the sole Networking programmer.
-              Working as a team in several roles, I helped create multiple game play systems including the machines, 
-              the item and item-grab programming, the game and audio manager, and the level manager, 
-
-
-            </div>
-
-            <div className="TestStyle" style={{ padding: '20px', marginRight: '35%' , marginLeft: '5%', marginBottom: '15px', textAlign: 'left', border: '1px solid magenta' }}>
-              
-              <h5><u>About Me</u></h5>
-              
-                I am a recent graduate of the Toronto Film School where I received a Diploma in Game Programming and Design. 
-                I am searching for work where being a part of a team means delivering great games and content to people who love to Game!  
-                I dream of being a part of a company that creates games that inspire the next generation of players and programmers.
-                As someone committed to self-growth and ongoing learning, I am currently working on programming a new game having turned off the internal game physics. 
-                All the physics is kinematically programmed and the game is state-based AI.
-
-            </div>
-            <div className="TestStyle" style={{ padding: '20px', marginRight: '40%' , marginLeft: '0%', marginBottom: '15px', textAlign: 'left', border: '1px solid magenta' }}>
-
-              <h5><u>My Role with our Capstone Project</u></h5>
-
-              I was the Programming Director and assisted the programmers in code or with design direction. 
-              I was also the sole Networking programmer.
-              Working as a team in several roles, I helped create multiple game play systems including the machines, 
-              the item and item-grab programming, the game and audio manager, and the level manager, 
-
-
-            </div>
 
         </Grid>
 
+        <div>
+          <hr style={{ marginTop: '-5px', marginBottom: '15px' }} />
+
+          <Footer size="2" style={{ paddingBottom: '0px' }}>
+            <div align="center">BrianPurdy.ca @ 2021, best viewed @ 1920x1080 resolution.</div>
+          </Footer>
+        </div>
+
+        
+
       </div>
+
+      
     )
   }
 }

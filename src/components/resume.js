@@ -15,8 +15,8 @@ class Resume extends Component {
               
             </div>
 
-            <h2 className="ResumeTextColor" style={{ paddingTop: '2em' }}>Brian Purdy</h2>
-            <h4 style={{ color: 'lightgray', paddingBottom: '15px' }}>Programmer And Game Design</h4>
+            <h2 className="ResumeTextColor" style={{ paddingTop: '35px' }}>Brian Purdy</h2>
+            <h4 style={{ color: 'lightgray', paddingBottom: '15px' }}>Video Game Programmer And Game Designer</h4>
             <hr style={{ borderTop: '3px solid #833fb2', width: 'auto', paddingBottom: '15px'  }}/>
             <p style={{ textAlign: 'left', paddingLeft: '3%', paddingRight: '5%', paddingBottom: '15px' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
             <hr style={{ borderTop: '3px solid #833fb2', width: 'auto', paddingBottom: '15px' }}/>
@@ -28,10 +28,11 @@ class Resume extends Component {
             <hr style={{ justifySelf: 'center', borderTop: '3px solid #833fb2', width: 'auto'}}/>
           </Cell>
           <Cell className="resume-right-col" col={8}>
-            <h2>Education</h2>
+            <h2 style={{ border: '3px solid #e22947' }} ><u>Education</u></h2>
 
 
-            <Education 
+            <Education
+              textAlign="left"
               startYear={2020}
               endYear={2021}
               schoolName="Toronto Film School"
@@ -44,11 +45,11 @@ class Resume extends Component {
               schoolName="Eastern College"
               schoolDescription="A school that offered various training and an opertunity to get on the job training which was a nice bonus to add to the training that was offered on top of the skills to work in the I.T. industry."
             />
-            <hr style={{borderTop: '3px solid #e22947'}} />
 
-            <h2>Experience</h2>
+            <h2 style={{ marginTop: '1em', border: '3px solid #e22947' }} ><u>Experience</u></h2>
 
             <Experience
+              
               startYear={2017}
               endYear={2019}
               jobName="External Game Beta Tester for Ubisoft"
@@ -61,27 +62,28 @@ class Resume extends Component {
               jobName="Junior Network Systems Administrator at the Halifax Convention Centre"
               jobDescription="My primary job was to support our all systems and personel as needed with I.T. issues and ticks that have been submitted as well as the networking infastructure of the Sports Arena and the new Convention Centre that just completed in Halifax, NS. "
             />
-            <hr style={{borderTop: '3px solid #e22947'}} />
-            <h2>Skills</h2>
+
+            {/*
+            <h2 style={{ border: '3px solid #e22947' }} ><u>Skills</u></h2>
 
 
               <Skills style={{ justifySelf: 'space-evenly' }}
                 skill="Unity"
-                progress={65}
+                progress={45}
               />
               <Skills
                 skill="C#"
-                progress={50}
+                progress={45}
               />
               <Skills
                 skill="C++"
-                progress={40}
+                progress={30}
               />
               <Skills
                 skill="Unreal"
-                progress={25}
+                progress={15}
               />
-              
+            */ }
 
           </Cell>
         </Grid>

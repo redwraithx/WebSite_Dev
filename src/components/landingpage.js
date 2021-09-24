@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Cell, Footer } from 'react-mdl';
+import GetVideo from '../ProjectData/GetVideo';
+import '../ProjectData/GetVideo.css';
 import '.././Landing.css';
 
 const tempImage = "/Images/ProjectImages/defaultProjectImage.png";
@@ -54,10 +56,11 @@ class Landing extends Component {
                       <div className="landingContentBody" >
                         Working on a game called "A Knights Journey". This game will be a 3rd person game using kinematic characters where I will be dealing with all the physics myself except for any static characters such as castle guards which do not interact with the world except to turn away the player if approached.
                       </div>
-                      <div style={{ display: 'inline', border: '1px solid magenta', justifyContent: 'space-between' }}>
-                        <a className="landingContentInlineImages">Image1</a>
-                        <a className="landingContentInlineImages">Image2</a>
-                        <a className="landingContentInlineImages">Image3</a>
+                      <div className="landingContentImagesFrame" style={{  border: '1px solid magenta'  }} >
+                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
+                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
+                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
+                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
                       </div>
                     </div>
                   </div>
@@ -72,34 +75,30 @@ class Landing extends Component {
                       <div className="landingContentBody" > 
                         Bug fixes for network interactions and updated player binary save data for future use.
                       </div>
-                      <div className="landingContentImagesFrame" style={{  border: '1px solid magenta'  }} >
-                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
-                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
-                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
-                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
-                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
-                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
+                      <div className="landingContentImagesFrame" style={{  border: '1px solid magenta'  }} hidden>
                         <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
                       </div>
                     </div>
                   </div>
                   
 
-
-                  <h5 className="landingContentHeader"><u>My Current Project</u></h5>
-                  <div className="landingContentBody">
-                    <u>9/21/2021</u>:<br />Working on a game called "A Knights Journey". This game will be a 3rd person game using kinematic characters where I will be dealing with all the physics myself except for any static characters such as castle guards which do not interact with the world except to turn away the player if approached.
+                  <div style={{ marginBottom: '15px' }}>
+                    <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
+                      <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;Turret Blaster game update&nbsp;&nbsp;</div>
+                      <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 9/17/2021 ]</div>
+                    </div>
+                    <div style={{ display: 'grid' }}>
+                      <div className="landingContentBody" > 
+                        Fixed some bugs and created a rifle for the player to visually shoot from.
+                      </div>
+                      <div className="landingContentImagesFrame" style={{  border: '1px solid magenta'  }} >
+                        <GetVideo embedId={"Dlsj1gUE_Kw"} className="landingContentVideoStyle"  />
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div style={{ padding: '20px', textAlign: 'left', color: 'gray' }}>
 
-                  <h5 className="landingContentHeader"><u>Recent Project updates</u></h5>
-                  <div className="landingContentBody">
-                    <b><u>Wash Out Update</u></b>: Bug fixes for network interactions and updated player binary save data for future use.
-                  </div>
 
                 </div>
-
               </div>
 
               <div className="social-links">
@@ -126,12 +125,12 @@ class Landing extends Component {
             </div>
           </Cell>
         </Grid>
-        <div style={{ paddingTop: '10px' }} />
+        <div style={{ paddingTop: '10px', marginBottom: '-10px'  }} />
 
           <hr style={{  }} />
 
 
-          <Footer size="2" style={{   }}>
+          <Footer size="2" style={{ paddingBottom: '0px' }}>
             <div align="center">BrianPurdy.ca @ 2021, best viewed @ 1920x1080 resolution.</div>
           </Footer>
         

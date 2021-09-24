@@ -10,9 +10,36 @@
     height: 100%;
 }
 
-.TestStyle {
-    color: white;
+.aboutMeEntryHeader {
+    color: #84d2f6;
 }
+
+.aboutMeEntryStyle2 {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 37%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    text-align: left;
+    border: 1px solid grey;
+}
+
+.aboutMeEntryStyle1 {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 37%;
+    margin-left: 0%;
+    margin-bottom: 10px;
+    text-align: left;
+    border: 1px solid grey;
+}
+
 
 body {
     background: #1d2d44;  /* fallback for old browsers */

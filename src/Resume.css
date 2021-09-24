@@ -5,12 +5,13 @@ body {
     position: fixed;
 }
 
+
 .BackGround-DivColor {
     
     text-align: center;
-    top: 10;
+    top: 50%;
     left: 0;
-    width: 100%;
+    width: 90%;
     height: 100%;
   }
 
