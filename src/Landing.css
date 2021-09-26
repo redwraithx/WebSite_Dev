@@ -1,8 +1,16 @@
-.landing{
+.landingTop{
     color: white;
     border-radius: 20%;
     border-bottom: 4px groove darkblue;
-    padding-top: 5px;
+    padding-top: 15px;
+}
+
+.landingBottom{
+    color: white;
+    border-radius: 40% 40% 0% 0%;
+    border-top: 4px groove darkblue;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 hr {
@@ -68,8 +76,7 @@ hr {
     align-items: center;
     width: 50%;
     margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
 
   .social-links i {

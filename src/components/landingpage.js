@@ -17,7 +17,7 @@ class Landing extends Component {
           <Cell col={12}>
 
             <div className="banner-text">
-              <h2 className="landing">Video Game Programming and Design</h2>
+              <h2 className="landingTop" style={{ paddingBottom: '15px' }}>Video Game Programming and Design</h2>
 
               <div style={{ padding: '10px', overflow: 'auto', paddingTop: '2px' }} >
                 <div style={{ padding: '20px', textAlign: 'left', color: 'grey' }}>
@@ -99,6 +99,8 @@ class Landing extends Component {
                 </div>
               </div>
 
+              <h2 className="landingBottom" style={{  }} >            </h2>
+
               <div className="social-links">
 
                 {/* LinkedIn */}
@@ -125,6 +127,7 @@ class Landing extends Component {
         </Grid>
         <div style={{ paddingTop: '10px', marginBottom: '-10px'  }} />
 
+        
 
           <hr style={{  }} />
 
