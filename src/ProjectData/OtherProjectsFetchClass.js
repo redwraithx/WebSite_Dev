@@ -11,7 +11,7 @@ import './GetVideo.css';
 const OtherProjectsFetchClass = () => {
 
     const projectInfo = [
-        { gameName: 'Willands Tomb', engineName: 'Construct', codeLanguage: 'Construct', numberOfMonthsToCreate: 3, createdBy: 'Brian Purdy', description: 'You play an investicator whom fell into an old tomb while searching for a Dr. Willand and triped an ancient trap... now you must escape with your life if you can.', videoURL: '',  imgURL: '', gitHubURL: '', playOrDownloadURL: 'https://redwraithx.itch.io/willandstomb-final', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
+        { gameName: 'Willands Tomb', engineName: 'Construct', codeLanguage: 'Construct', numberOfMonthsToCreate: 3, createdBy: 'Brian Purdy', description: 'You play an investicator whom fell into an old tomb while searching for a Dr. Willand and triped an ancient trap... now you must escape with your life if you can.', videoURL: 'ec6c_6Kj-98',  imgURL: '', gitHubURL: '', playOrDownloadURL: 'https://redwraithx.itch.io/willandstomb-final', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
 
     ];
 
@@ -73,8 +73,7 @@ const OtherProjectsFetchClass = () => {
                     
                     <div className="ProjectLinks ContentAlignment" style={{ height: '3rem' }} >
                         <button className="ProjectLinkButton" onClick={() => {if(project.gitHubURL){window.open(project.gitHubURL, "_blank")}}} style={{ color: 'Black', fontSize: '18px', fontWeight: 'bolder', paddingTop: '2px', paddingBottom: '2px', marginTop: '0px', marginBottom: '0px', borderRadius: '10px', alignSelf: 'center' }} >GitHub</button>
-                        <button className="ProjectLinkButton" onClick={() => {if(project.playOrDownloadURL){window.open(project.playOrDownloadURL, "_blank")}}} style={{ color: 'Black', fontSize: '18px', fontWeight: 'bolder' , paddingTop: '2px', paddingBottom: '2px', marginTop: '0px', marginBottom: '0px', borderRadius: '10px', alignSelf: 'center'  }} >Demo</button>
-                    </div>    
+                        <button className="ProjectLinkButton" onClick={() => {if(project.playOrDownloadURL){window.open(project.playOrDownloadURL, "_blank")}}} style={{ color: 'Black', fontSize: '18px', fontWeight: 'bolder' , paddingTop: '2px', paddingBottom: '2px', marginTop: '0px', marginBottom: '0px', borderRadius: '10px', alignSelf: 'center'  }} >Demo</button>                    </div>    
 
                         
                     

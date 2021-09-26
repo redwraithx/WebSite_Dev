@@ -5,6 +5,8 @@ import '../ProjectData/GetVideo.css';
 import '.././Landing.css';
 
 const tempImage = "/Images/ProjectImages/defaultProjectImage.png";
+const videoTest = 'Dlsj1gUE_Kw';
+
 
 class Landing extends Component {
 
@@ -13,15 +15,9 @@ class Landing extends Component {
       <div style={{width: '100%', height: 'auto', marginTop: '2em' }} scroll >
         <Grid className="landing-grid">
           <Cell col={12}>
-            
-            
-            
 
             <div className="banner-text">
               <h2 className="landing">Video Game Programming and Design</h2>
-            
-
-
 
               <div style={{ padding: '10px', overflow: 'auto', paddingTop: '2px' }} >
                 <div style={{ padding: '20px', textAlign: 'left', color: 'grey' }}>
@@ -91,8 +87,10 @@ class Landing extends Component {
                       <div className="landingContentBody" > 
                         Fixed some bugs and created a rifle for the player to visually shoot from.
                       </div>
-                      <div className="landingContentImagesFrame" style={{  border: '1px solid magenta'  }} >
-                        <GetVideo embedId={"Dlsj1gUE_Kw"} className="landingContentVideoStyle"  />
+                      <div className="landingContentImagesFrame" style={{  border: '1px solid magenta'   }} >
+                        <div className="landingContentVideoStyle" style={{ width: '247px', height: '138px',  }} >
+                          <GetVideo embedId="Dlsj1gUE_Kw"  />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -126,6 +124,7 @@ class Landing extends Component {
           </Cell>
         </Grid>
         <div style={{ paddingTop: '10px', marginBottom: '-10px'  }} />
+
 
           <hr style={{  }} />
 
