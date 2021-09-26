@@ -12,14 +12,14 @@ class Landing extends Component {
 
   render() {
     return(
-      <div style={{width: '100%', height: 'auto', marginTop: '2em' }} scroll >
+      <div style={{width: '100%', height: 'auto', marginTop: '0px' }} scroll >
         <Grid className="landing-grid">
           <Cell col={12}>
 
             <div className="banner-text">
               <h2 className="landingTop" style={{ paddingBottom: '15px' }}>Video Game Programming and Design</h2>
 
-              <div style={{ padding: '10px', overflow: 'auto', paddingTop: '2px' }} >
+              <div style={{ padding: '10px', overflow: 'auto', paddingTop: '0px' }} >
                 <div style={{ padding: '20px', textAlign: 'left', color: 'grey' }}>
 
                   {/* Start Entry */}
@@ -125,7 +125,7 @@ class Landing extends Component {
             </div>
           </Cell>
         </Grid>
-        <div style={{ paddingTop: '10px', marginBottom: '-10px'  }} />
+        <div style={{ paddingTop: '10px', marginBottom: '-40px'  }} />
 
         
 
