@@ -11,7 +11,7 @@ import './GetVideo.css';
 const UnrealProjectsFetchClass = () => {
 
     const projectInfo = [
-        { gameName: 'Turret Blaster', engineName: 'Unreal', codeLanguage: 'C++ & Blueprints', numberOfMonthsToCreate: 3, createdBy: 'Brian Purdy', description: 'This is a time based game where you run around with rifle in hand and destroy all the turrents in the given and win the game. ', videoURL: '',  imgURL: '', gitHubURL: 'https://github.com/redwraithx/TurretBlaster', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
+        { gameName: 'Turret Blaster', engineName: 'Unreal', codeLanguage: 'C++ & Blueprints', numberOfMonthsToCreate: 3, createdBy: 'Brian Purdy', description: 'This is a time based game where you run around with rifle in hand and destroy all the turrents in the given and win the game. ', videoURL: 'og1ap7Eyt2Q',  imgURL: '', gitHubURL: 'https://github.com/redwraithx/TurretBlaster', playOrDownloadURL: 'http://www.google.ca', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
 
     ];
 
