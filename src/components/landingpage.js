@@ -52,11 +52,11 @@ class Landing extends Component {
                       <div className="landingContentBody" >
                         Working on a game called "A Knights Journey". This game will be a 3rd person game using kinematic characters where I will be dealing with all the physics myself except for any static characters such as castle guards which do not interact with the world except to turn away the player if approached.
                       </div>
-                      <div className="landingContentImagesFrame" style={{ width: '100%', height: 'auto'    }} >
-                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
-                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
-                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
-                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
+                      <div className="landingContentImagesFrame" style={{ width: '100%', height: 'auto' }} >
+                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + 'Images/ProjectImages/KnightsJourney/player_at_healing_well.PNG' } />
+                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + 'Images/ProjectImages/KnightsJourney/player_denied_entry.PNG' } />
+                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + 'Images/ProjectImages/KnightsJourney/player_healing_spell_at_healing_well.PNG' } />
+                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + 'Images/ProjectImages/KnightsJourney/archer_group_firing_arrows_at_player.gif' } />
                       </div>
                     </div>
                   </div>
@@ -72,7 +72,7 @@ class Landing extends Component {
                         Bug fixes for network interactions and updated player binary save data for future use.
                       </div>
                       <div className="landingContentImagesFrame" style={{  width: '100%', height: 'auto' }} >
-                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
+                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + '/Images/ProjectImages/WashOff/WashOff_ThumbNail.png'} />
                       </div>
                     </div>
                   </div>
@@ -85,7 +85,7 @@ class Landing extends Component {
                     </div>
                     <div style={{ display: 'grid' }}>
                       <div className="landingContentBody" > 
-                        Fixed some bugs and created a rifle for the player to visually shoot from.
+                        Fixed some bugs and created a rifle for the player to visually shoot from.<br />NOTE: This is not something I normally do but nothing else was working at the time.
                       </div>
                       <div className="landingContentImagesFrame" style={{  width: '100%', height: 'auto' }} >
                         <div className="landingContentVideoStyle" style={{ width: '247px', height: '138px',  }} >
@@ -118,7 +118,7 @@ class Landing extends Component {
                 {/* Youtube */}
                 <a href="http://google.com" rel="noopener noreferrer" target="_blank">
                   <img src={process.env.PUBLIC_URL + "/Images/SocialIcons/youtube_512x512_white.png"} height="50px" width="50px" className="SocialMediaLinks" alt="LinkedIn Image Icon" />
-                  {/* <i className="fa fa-youtube-square" aria-hidden="true" aria-label="View my Youtube"  /> */}
+                  { /* <i className="fa fa-youtube-square" aria-hidden="true" aria-label="View my Youtube"  /> */ }
                 </a>
 
               </div>

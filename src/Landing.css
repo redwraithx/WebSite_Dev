@@ -52,13 +52,13 @@ hr {
     padding-bottom: 10px;
     min-width: 247px;
     min-height: 160px;
-    border-bottom: 2px solid Gray;
+    
 }
 
 .landingContentInlineImages {
     flex-wrap: wrap;
     align-self: center;
-    border: 1px solid cyan;
+    border: 1px solid rgb(24, 23, 23);
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 5px;
