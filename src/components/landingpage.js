@@ -99,7 +99,7 @@ class Landing extends Component {
                   <div style={{ marginBottom: '15px' }}>
                     <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
                       <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;WebSite rebuild first Update&nbsp;&nbsp;</div>
-                      <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 9/14/2021 ]</div>
+                      <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 9/5/2021 ]</div>
                     </div>
                     <div style={{ display: 'grid' }}>
                       <div className="landingContentBody" > 
