@@ -8,6 +8,7 @@ import './GetVideo.css';
 
 
 
+
 const UnityProjectsFetchClass = () => {
 
     const projectInfo = [
@@ -15,7 +16,7 @@ const UnityProjectsFetchClass = () => {
         { gameName: 'Reel Time', engineName: 'Unity', codeLanguage: 'C#', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy, Owen Hooper, Jonas and Poppinoffski', description: 'This is a game like flappy birds but your catching fish and powerups as well as you can reverse time if you have the power to do so.', videoURL: 'ht87KKlASGA',  imgURL: '', gitHubURL: '', playOrDownloadURL: 'https://redwraithx.itch.io/reeltime', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
         { gameName: 'Metroid Clone', engineName: 'Unity', codeLanguage: 'C#', numberOfMonthsToCreate: 3, createdBy: 'Brian Purdy', description: 'A NES Metroid Clone with like machanics and it currently a work in progress.', videoURL: '',  imgURL: '', gitHubURL: '', playOrDownloadURL: 'https://redwraithx.itch.io/metroid-clone', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
         { gameName: 'Galaxy Shooter Pro 2.5D', engineName: 'Unity', codeLanguage: 'C#', numberOfMonthsToCreate: 2, createdBy: 'Brian Purdy', description: 'A 2D game using 3d styled assets within 3d space.', videoURL: 'S26-VHDMSCw',  imgURL: '', gitHubURL: '', playOrDownloadURL: 'https://github.com/redwraithx/Space-Shooter-Pro-2.5D', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
-        { gameName: 'RPG World', engineName: 'Unity', codeLanguage: 'C#', numberOfMonthsToCreate: 2, createdBy: 'Brian Purdy', description: '', videoURL: 'ehmCnGUHqIo',  imgURL: '', gitHubURL: '', playOrDownloadURL: 'https://github.com/redwraithx/', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
+        { gameName: 'RPG World', engineName: 'Unity', codeLanguage: 'C#', numberOfMonthsToCreate: 2, createdBy: 'Brian Purdy', description: 'First Person RPG game where you play a ', videoURL: 'ehmCnGUHqIo',  imgURL: '', gitHubURL: '', playOrDownloadURL: 'https://github.com/redwraithx/', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
 
     ];
 
@@ -49,10 +50,12 @@ const UnityProjectsFetchClass = () => {
             );
         }
 
+        
     }
         
 
         return (
+            
             <Card key={index} className="box ContentStyle" style={{ height: 'auto', width: 'auto' }}>
                 
                 <Card.Body className="ContentStyle">
@@ -89,8 +92,11 @@ const UnityProjectsFetchClass = () => {
 
     return (
         <div className="grid">
+            
             {projectInfo.map(renderProject)}
+            
         </div>
+        
     );
 }
 

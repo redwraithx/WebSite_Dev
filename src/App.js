@@ -4,7 +4,7 @@ import {Layout, Header, Navigation, Drawer, Content, IconToggle, IconButton } fr
 import Main from './components/main';
 import { Link } from 'react-router-dom';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
-
+import ScrollToTopButton from './ProjectData/ScrollToTop';
 
 const menuItems = [
   'Home',
@@ -77,8 +77,9 @@ class App extends Component {
 
         <Content>
             <div className="page-content" />
+            
             <Main />
-
+            
             
 
         </Content>

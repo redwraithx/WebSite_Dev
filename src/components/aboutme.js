@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Grid, Footer, Cell, List, ListItem, ListItemContent } from 'react-mdl';
 import '.././AboutMe.css';
+import LoadFooter from './LoadFooter';
+
 
 class About extends Component {
   render() {
@@ -75,7 +77,6 @@ class About extends Component {
           </Footer>
         </div>
 
-        
 
       </div>
 

@@ -6,8 +6,8 @@ import CppProjectsFetchClass from '../ProjectData/CppProjectsFetchClass';
 import UnrealProjectsFetchClass from '../ProjectData/UnrealProjectsFetchClass';
 import OtherProjectsFetchClass from '../ProjectData/OtherProjectsFetchClass';
 import '.././Projects.css';
-
-
+import '../ProjectData/ScrollToTop';
+import ScrollToTopButton from '../ProjectData/ScrollToTop';
 
 class Projects extends Component {
   constructor(props) {
@@ -19,12 +19,15 @@ class Projects extends Component {
 
   toggleCategories() {
     
+   
 
     if(this.state.activeTab === 0) {
       return(
         <div  style={{ alignContent: 'center', justifyContent: 'center', background: 'repeat linear-gradient(to right, #1d2d44, #001f54, #1d2d44)', backgroundAttachment: 'fixed' }} > 
 
+          <ScrollToTopButton />
           <UnityProjectsFetchClass />
+
 
         </div>
       )
@@ -75,6 +78,8 @@ class Projects extends Component {
     return(
       <div style={{width: 'auto', margin: 'auto'}}>
 
+
+
         <div className="Projects-Header" >
 
           <Tabs activeTab={this.state.activeTab} onChange={  (tabId) => this.setState({ activeTab: tabId }) } style={{ flex: '1', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} >
@@ -98,8 +103,11 @@ class Projects extends Component {
 
       </div >
 
+        
         {this.toggleCategories()}
             
+        
+
       </div>
     )
   }

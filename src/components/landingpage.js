@@ -5,14 +5,13 @@ import '../ProjectData/GetVideo.css';
 import '.././Landing.css';
 
 const tempImage = "/Images/ProjectImages/defaultProjectImage.png";
-const videoTest = 'Dlsj1gUE_Kw';
 
 
 class Landing extends Component {
 
   render() {
     return(
-      <div style={{width: '100%', height: 'auto', marginTop: '0px' }} scroll >
+      <div style={{width: '100%', height: 'auto', marginTop: '0px' }}  >
         <Grid className="landing-grid">
           <Cell col={12}>
 
