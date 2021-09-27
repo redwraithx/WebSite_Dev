@@ -43,14 +43,15 @@ hr {
     flex-wrap: wrap;
     justify-self: center;
     justify-content: space-around;
+    
     margin-left: 30px;
     margin-right: 30px;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     min-width: 247px;
-    height: 160px;
+    min-height: 160px;
     
 }
 
@@ -60,6 +61,8 @@ hr {
     border: 1px solid cyan;
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     width: 247px;
     height: 138px;
     
