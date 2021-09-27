@@ -45,16 +45,18 @@ class Contact extends Component {
                   */ }
 
                   <ListItem>
-                    <ListItemContent style={{  fontSize: '10px', fontFamily: 'Anton' }} className="EmailInfo">
-                      <i className="fa fa-envelope" aria-hidden="true" style={{ justifyContent: 'center', marginBottom: '5px', marginLeft: '50px' }}>
-                        <a href="mailto:brianpurdy@live.com" style={{ paddingLeft: '20px',   alignSelf: 'center', fontSize: '70%' }} >brianpurdy@live.com</a>
+                    <ListItemContent style={{  }} className="EmailInfo">
+                      <div className="EmailFrame" style={{ display:'inline-flex' }}>
+                      {/* <i className="fa fa-envelope" aria-hidden="false" style={{  }} /> */}
+                        <img src={process.env.PUBLIC_URL + "/Images/MyIcons/Email.png"}  alt="email image" />
+                        <a className="EmailButton" href="mailto:brianpurdy@live.com" style={{ paddingLeft: '10px', paddingTop: '5px'  }} >brianpurdy@live.com</a>
                     {/*   <form id="formEmail" action="mailto:brianpurdy@live.com" method="post" >
                           <input type="action" id="email" />
                           <input type="button" id="buttonEmail" value="click" />
                         </form>
                    */ }
                       { /* <button onClick={ () =>  window.Clipboard.setData("Text", 'brianpurdy@live.com') } className="EmailButton">BrianPurdy@live.com</button> */ }
-                      </i>
+                      </div>
                     </ListItemContent>
                   </ListItem>
 

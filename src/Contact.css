@@ -24,7 +24,7 @@
   }
 
 
-.fa:hover{
+.EmailFrame:hover{
     border-style: none;
     border-radius: 0px 0px 0px 0px !important;
     background-color: white !important;
@@ -45,15 +45,10 @@
 }
 
 .EmailButton {
-    margin-top: 11px;
-    margin-left: 10px;
     text-align: center;
-    border: none;
-    border-style: groove;
-    background-color: gray;
+    align-self: center;
     height: 50px;
-    width: 50vh;
-    font-size: 20pt;
+    font-size: 30pt;
 }
 
 .fa-envelope {
@@ -74,6 +69,6 @@
 
 
 .contact-list {
-    padding-left: 30px;
+    padding-left: 0px;
     
 }
