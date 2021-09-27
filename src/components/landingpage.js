@@ -53,9 +53,9 @@ class Landing extends Component {
                         Working on a game called "A Knights Journey". This game will be a 3rd person game using kinematic characters where I will be dealing with all the physics myself except for any static characters such as castle guards which do not interact with the world except to turn away the player if approached.
                       </div>
                       <div className="landingContentImagesFrame" style={{ width: '100%', height: 'auto' }} >
-                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + 'Images/ProjectImages/KnightsJourney/player_at_healing_well.PNG' } />
-                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + 'Images/ProjectImages/KnightsJourney/player_denied_entry.PNG' } />
-                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + 'Images/ProjectImages/KnightsJourney/player_healing_spell_at_healing_well.PNG' } />
+                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + 'Images/ProjectImages/KnightsJourney/player_at_healing_well.pong' } />
+                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + 'Images/ProjectImages/KnightsJourney/player_denied_entry.png' } />
+                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + 'Images/ProjectImages/KnightsJourney/player_healing_spell_at_healing_well.png' } />
                         <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + 'Images/ProjectImages/KnightsJourney/archer_group_firing_arrows_at_player.gif' } />
                       </div>
                     </div>
