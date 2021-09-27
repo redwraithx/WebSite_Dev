@@ -53,10 +53,10 @@ class Landing extends Component {
                         Working on a game called "A Knights Journey". This game will be a 3rd person game using kinematic characters where I will be dealing with all the physics myself except for any static characters such as castle guards which do not interact with the world except to turn away the player if approached.
                       </div>
                       <div className="landingContentImagesFrame" style={{ width: '100%', height: 'auto' }} >
-                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + 'Images/ProjectImages/KnightsJourney/PlayerAtHealingWell.png' } />
-                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + 'Images/ProjectImages/KnightsJourney/PlayerDeniedEntry.png' } />
-                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + 'Images/ProjectImages/KnightsJourney/HealingSpellTest.png' } />
-                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + 'Images/ProjectImages/KnightsJourney/ArchersTest.gif' } />
+                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + 'Images/ProjectImages/KnightsJourney/PlayerAtHealingWell.png' } alt="Player getting healing from magical well" />
+                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + 'Images/ProjectImages/KnightsJourney/PlayerDeniedEntry.png' } alt="Player denied entry to the castle" />
+                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + 'Images/ProjectImages/KnightsJourney/HealingSpellTest.png' } alt="Player Testing his healing ability" />
+                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + 'Images/ProjectImages/KnightsJourney/ArchersTest.gif' } alt="Archers shooting at players current position - TEST" />
                       </div>
                     </div>
                   </div>
