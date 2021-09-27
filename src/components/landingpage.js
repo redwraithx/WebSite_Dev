@@ -52,10 +52,11 @@ class Landing extends Component {
                       <div className="landingContentBody" >
                         Working on a game called "A Knights Journey". This game will be a 3rd person game using kinematic characters where I will be dealing with all the physics myself except for any static characters such as castle guards which do not interact with the world except to turn away the player if approached.
                       </div>
-                      <div className="landingContentImagesFrame" style={{  border: '1px solid magenta'  }} >
-                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
-                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
-                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
+                      <div className="landingContentImagesFrame" style={{ height: 'auto',  border: '1px solid magenta'  }} >
+                        { /* IMPORTANT make sure you add: style={{ marginBottom: '10px' }} to all items except the bottom one to align them properly */ }
+                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} style={{ marginBottom: '10px' }} />
+                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} style={{ marginBottom: '10px' }} />
+                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} style={{ marginBottom: '10px' }} />
                         <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
                       </div>
                     </div>
@@ -71,7 +72,7 @@ class Landing extends Component {
                       <div className="landingContentBody" > 
                         Bug fixes for network interactions and updated player binary save data for future use.
                       </div>
-                      <div className="landingContentImagesFrame" style={{  border: '1px solid magenta'  }} hidden>
+                      <div className="landingContentImagesFrame" style={{  border: '1px solid magenta'  }} >
                         <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + tempImage} />
                       </div>
                     </div>
