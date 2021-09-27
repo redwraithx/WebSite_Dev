@@ -52,7 +52,7 @@ hr {
     padding-bottom: 10px;
     min-width: 247px;
     min-height: 160px;
-    
+    border-bottom: 2px solid Gray;
 }
 
 .landingContentInlineImages {
