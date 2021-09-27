@@ -7,7 +7,10 @@ import UnrealProjectsFetchClass from '../ProjectData/UnrealProjectsFetchClass';
 import OtherProjectsFetchClass from '../ProjectData/OtherProjectsFetchClass';
 import '.././Projects.css';
 import '../ProjectData/ScrollToTop';
+import LoadFooter from './LoadFooter';
 import ScrollToTopButton from '../ProjectData/ScrollToTop';
+
+
 
 class Projects extends Component {
   constructor(props) {
@@ -25,9 +28,9 @@ class Projects extends Component {
       return(
         <div  style={{ alignContent: 'center', justifyContent: 'center', background: 'repeat linear-gradient(to right, #1d2d44, #001f54, #1d2d44)', backgroundAttachment: 'fixed' }} > 
 
-          <ScrollToTopButton />
+          
           <UnityProjectsFetchClass />
-
+          <LoadFooter  />
 
         </div>
       )
@@ -37,6 +40,7 @@ class Projects extends Component {
         <div  style={{ alignContent: 'center', justifyContent: 'center', background: 'repeat linear-gradient(to right, #1d2d44, #001f54, #1d2d44)', backgroundAttachment: 'fixed' }} > 
 
           <CSharpProjectsFetchClass />
+          <LoadFooter />
 
         </div>
       )
@@ -45,6 +49,7 @@ class Projects extends Component {
         <div  style={{ alignContent: 'center', justifyContent: 'center', background: 'repeat linear-gradient(to right, #1d2d44, #001f54, #1d2d44)', backgroundAttachment: 'fixed' }} > 
 
           <CppProjectsFetchClass />
+          <LoadFooter />
 
         </div>
       )
@@ -53,6 +58,7 @@ class Projects extends Component {
         <div  style={{ alignContent: 'center', justifyContent: 'center', background: 'repeat linear-gradient(to right, #1d2d44, #001f54, #1d2d44)', backgroundAttachment: 'fixed' }} > 
 
           <UnrealProjectsFetchClass />
+          <LoadFooter />
 
         </div>
       )
@@ -61,6 +67,7 @@ class Projects extends Component {
         <div  style={{ alignContent: 'center', justifyContent: 'center', background: 'repeat linear-gradient(to right, #1d2d44, #001f54, #1d2d44)', backgroundAttachment: 'fixed' }} > 
 
           <OtherProjectsFetchClass />
+          <LoadFooter />
 
         </div>
       )

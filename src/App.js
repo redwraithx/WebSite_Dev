@@ -54,7 +54,7 @@ class App extends Component {
                 style={ this.state.activeTab === 0 ? activeStyle : {} } 
                 //onClick={ this.setState({ activeTab: 0 }) } 
                 to='/' className="Nav-Links">Home</Link>
-                <Link to='/resume' className="Nav-Links" >Resume</Link>
+                {/* <Link to='/resume' className="Nav-Links" >Resume</Link> */ }
                 <Link to='/aboutme' className="Nav-Links">About Me</Link>
                 <Link to='/projects' className="Nav-Links">Projects</Link>
                 <Link to='/contact' className="Nav-Links">Contact</Link>
@@ -66,7 +66,7 @@ class App extends Component {
         <Drawer className="Drawer-SideBar" id="SideBar" aria-expanded="false" title={<Link style={{textDecoration: 'none', color: 'black'}} to='/'>My Site Links</Link>}>
             <Navigation >
               <Link onClick={IconToggle} to='/' className="Nav-Links" className="Nav-SideBar">Home</Link>
-              <Link onClick={IconToggle} to='/resume' className="Nav-Links" className="Nav-SideBar">Resume</Link>
+              { /* <Link onClick={IconToggle} to='/resume' className="Nav-Links" className="Nav-SideBar">Resume</Link> */ }
               <Link onClick={IconToggle} to='/aboutme' className="Nav-Links" className="Nav-SideBar">About Me</Link>
               <Link onClick={IconToggle} to='/projects' className="Nav-Links" className="Nav-SideBar">Projects</Link>
               <Link onClick={IconToggle} to='/contact' className="Nav-Links" className="Nav-SideBar">Contact</Link>

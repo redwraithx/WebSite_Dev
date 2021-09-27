@@ -4,6 +4,7 @@ import Education from './education';
 import Experience from './experience';
 import Skills from './skills';
 import '.././Resume.css';
+import LoadFooter from './LoadFooter';
 
 class Resume extends Component {
   render() {
@@ -87,6 +88,9 @@ class Resume extends Component {
 
           </Cell>
         </Grid>
+
+        <LoadFooter />
+
       </div > 
     )
   }

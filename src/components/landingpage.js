@@ -3,6 +3,7 @@ import { Grid, Cell, Footer } from 'react-mdl';
 import GetVideo from '../ProjectData/GetVideo';
 import '../ProjectData/GetVideo.css';
 import '.././Landing.css';
+import LoadFooter from './LoadFooter';
 
 const tempImage = "/Images/ProjectImages/defaultProjectImage.png";
 
@@ -124,16 +125,11 @@ class Landing extends Component {
             </div>
           </Cell>
         </Grid>
-        <div style={{ paddingTop: '10px', marginBottom: '-40px'  }} />
+        <div style={{ paddingTop: '0px'  }} />
 
         
 
-          <hr style={{  }} />
-
-
-          <Footer size="2" style={{ paddingBottom: '0px' }}>
-            <div align="center">BrianPurdy.ca @ 2021, best viewed @ 1920x1080 resolution.</div>
-          </Footer>
+          <LoadFooter />
         
 
       </div>

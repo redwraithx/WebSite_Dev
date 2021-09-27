@@ -70,11 +70,9 @@ class About extends Component {
         </Grid>
 
         <div>
-          <hr style={{ marginTop: '-5px', marginBottom: '15px' }} />
+          
+          <LoadFooter />
 
-          <Footer size="2" style={{ paddingBottom: '0px' }}>
-            <div align="center">BrianPurdy.ca @ 2021, best viewed @ 1920x1080 resolution.</div>
-          </Footer>
         </div>
 
 
