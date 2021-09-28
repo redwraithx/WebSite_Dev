@@ -54,20 +54,6 @@ class About extends Component {
 
 
 
-
-
-            <div className="aboutMeEntryStyle2" style={{  }} hidden>
-
-              <h5 className="aboutMeEntryHeader" ><u>My Role with our Capstone Project</u></h5>
-
-              I was the Programming Director and assisted the programmers in code or with design direction. 
-              I was also the sole Networking programmer.
-              Working as a team in several roles, I helped create multiple game play systems including the machines, 
-              the item and item-grab programming, the game and audio manager, and the level manager, 
-
-            </div>
-            
-
         </Grid>
 
         <div>
