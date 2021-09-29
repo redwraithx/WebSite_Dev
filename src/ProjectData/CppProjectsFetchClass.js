@@ -12,7 +12,8 @@ const CppProjectsFetchClass = () => {
 
     const projectInfo = [
         { gameName: 'Console RPG', engineName: 'C++ Console App', codeLanguage: 'C++', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'This console game is like a Dungeons & Dragons style game, with classes/races various levels, equipment customized per class and a open map like sytem. give it try you may find its better then you think.', videoURL: 'q2AO_yIOpFU',  imgURL: '', gitHubURL: 'https://github.com/redwraithx/ConsoleRPG', playOrDownloadURL: 'https://redwraithx.itch.io/console-rpg', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
-        { gameName: 'Crafty Clone', engineName: 'C++ & SDL', codeLanguage: 'C++', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'This Game is a clone of \"brackey\'s\" craft game which was made in unity using c#. I just learned about SDL using C++ so I did my best to remake this game in 5 days which is what you see here.', videoURL: '',  imgURL: '', gitHubURL: 'https://github.com/redwraithx/', playOrDownloadURL: 'https://redwraithx.itch.io/', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
+       // { gameName: 'Crafty Clone', engineName: 'C++ & SDL', codeLanguage: 'C++', numberOfMonthsToCreate: 1, createdBy: 'Brian Purdy', description: 'This Game is a clone of \"brackey\'s\" craft game which was made in unity using c#. I just learned about SDL using C++ so I did my best to remake this game in 5 days which is what you see here.', videoURL: '',  imgURL: '', gitHubURL: 'https://github.com/redwraithx/', playOrDownloadURL: 'https://redwraithx.itch.io/', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
+       
     ];
 
     const renderProject = (project, index) => {
