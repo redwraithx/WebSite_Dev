@@ -33,6 +33,7 @@ class Landing extends Component {
 
                 <div style={{ padding: '10px', overflow: 'auto', paddingTop: '0px' }} >
                   <div style={{ padding: '20px', textAlign: 'left', color: 'grey' }}>
+                    
 
                     {/* Start Entry */}
                     { /*
@@ -54,6 +55,7 @@ class Landing extends Component {
                     {/* End Entry */}
 
 
+
                     {/* Start Entry */}
                     <div style={{ marginBottom: '15px' }}>
                       <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
@@ -65,15 +67,18 @@ class Landing extends Component {
                           Working on a game called "A Knights Journey". This game will be a 3rd person game using kinematic characters where I will be dealing with all the physics myself except for any static characters such as castle guards which do not interact with the world except to turn away the player if approached.
                         </div>
                         <div className="landingContentImagesFrame" style={{ width: '100%', height: 'auto' }} >
-                          <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/PlayerAtHealingWell.png' } alt="Player getting healing from magical well" />
-                          <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/PlayerDeniedEntry.png' } alt="Player denied entry to the castle" />
-                          <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/HealingSpellTest.png' } alt="Player Testing his healing ability" />
-                          <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/ArchersTest.gif' } alt="Archers shooting at players current position - TEST" />
+                          <ViewSelectedImage imageSource={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/PlayerAtHealingWell.png' } imageSourceThumbNail={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/PlayerAtHealingWell_ThumbNail.png' } imageAltText="Player getting healing from magical well image" imageClassName="landingContentInlineImages" />
+                          <ViewSelectedImage imageSource={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/PlayerDeniedEntry.png'  } imageSourceThumbNail={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/PlayerDeniedEntry_ThumbNail.png' } imageAltText="Player denied entry to the castle" imageClassName="landingContentInlineImages" />
+                          <ViewSelectedImage imageSource={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/HealingSpellTest.png'  } imageSourceThumbNail={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/HealingSpellTest_ThumbNail.png' } imageAltText="Player Testing his healing ability" imageClassName="landingContentInlineImages" />
+                          <ViewSelectedImage imageSource={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/ArchersTest.gif'  } imageSourceThumbNail={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/ArchersTest_ThumbNail.gif' } imageAltText="Archers shooting at players current position - TEST" imageClassName="landingContentInlineImages" />
                         </div>
                       </div>
                     </div>
                     {/* End Entry */}
 
+
+
+                    {/* Start Entry */}
                     <div style={{ marginBottom: '15px' }}>
                       <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
                         <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;Wash Out game update&nbsp;&nbsp;</div>
@@ -102,8 +107,10 @@ class Landing extends Component {
                         </div>
                       </div>
                     </div>
-                    
+                    {/* End Entry */}
 
+                    
+                    {/* Start Entry */}
                     <div style={{ marginBottom: '15px' }}>
                       <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
                         <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;Turret Blaster game update&nbsp;&nbsp;</div>
@@ -120,8 +127,11 @@ class Landing extends Component {
                         </div>
                       </div>
                     </div>
+                    {/* End Entry */}
+
                     
                     
+                    {/* Start Entry */}
                     <div style={{ marginBottom: '15px' }}>
                       <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
                         <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;WebSite rebuild first Update&nbsp;&nbsp;</div>
@@ -133,6 +143,7 @@ class Landing extends Component {
                         </div>
                       </div>
                     </div>
+                    {/* End Entry */}
 
 
                   </div>

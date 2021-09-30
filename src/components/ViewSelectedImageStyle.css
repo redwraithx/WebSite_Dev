@@ -19,6 +19,8 @@
     position: fixed;
     top: 50%;
     left: 50%;
+    padding: 6%;
+    z-index: 3;
     transform: translate(-50%, -50%);
 }
   
@@ -26,5 +28,6 @@
     position: fixed;
     top: 50%;
     left: 50%;
+    z-index: 3;
     transform: translate(-50%, -50%);
 }

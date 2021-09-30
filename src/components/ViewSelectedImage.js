@@ -44,7 +44,7 @@ class ImageComponent extends Component {
         {console.log("source image location: " + this.newImage.imgSource)}
         {console.log("current state: " + this.state.isOpen)}
         <img
-          style={{ border: '1px solid magenta', width: '247px', height: '134px' }}
+          style={{ border: '1px solid gray', width: '247px', height: '134px' }}
           className={this.newImage.imgNewClassName}
           src={ /*publicURL + */this.newImage.imgSourceThumbnail }
           onClick={ this.handleShowDialog }
@@ -64,9 +64,9 @@ class ImageComponent extends Component {
               src={publicURL + "/Images/MyBGs/GraySmallBG.png"}
               onClick={ this.handleShowDialog }
               />
-            <img
+            <img  
               className='divElement'
-              style={{ border: '1px solid magenta', maxWidth: '853px', maxHeight: '480px', textAlign: 'center' }}
+              style={{ border: '1px solid gray', maxWidth: '100%', maxHeight: '100%', textAlign: 'center' }}
               src={ /*publicURL + */this.newImage.imgSource }
               onClick={ this.handleShowDialog }
               alt={ this.newImage.imgAltText }
