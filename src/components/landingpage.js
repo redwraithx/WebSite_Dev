@@ -67,10 +67,10 @@ class Landing extends Component {
                           Working on a game called "A Knights Journey". This game will be a 3rd person game using kinematic characters where I will be dealing with all the physics myself except for any static characters such as castle guards which do not interact with the world except to turn away the player if approached.
                         </div>
                         <div className="landingContentImagesFrame" style={{ width: '100%', height: 'auto' }} >
-                          <ViewSelectedImage imageSource={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/PlayerAtHealingWell.png' } imageSourceThumbNail={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/PlayerAtHealingWell_ThumbNail.png' } imageAltText="Player getting healing from magical well image" imageClassName="landingContentInlineImages" />
-                          <ViewSelectedImage imageSource={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/PlayerDeniedEntry.png'  } imageSourceThumbNail={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/PlayerDeniedEntry_ThumbNail.png' } imageAltText="Player denied entry to the castle" imageClassName="landingContentInlineImages" />
-                          <ViewSelectedImage imageSource={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/HealingSpellTest.png'  } imageSourceThumbNail={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/HealingSpellTest_ThumbNail.png' } imageAltText="Player Testing his healing ability" imageClassName="landingContentInlineImages" />
-                          <ViewSelectedImage imageSource={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/ArchersTest.gif'  } imageSourceThumbNail={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/ArchersTest_ThumbNail.gif' } imageAltText="Archers shooting at players current position - TEST" imageClassName="landingContentInlineImages" />
+                          <ViewSelectedImage imageSource={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/PlayerAtHealingWell.png' } imageSourceThumbNail={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/PlayerAtHealingWell_Thumbnail.png' } imageAltText="Player getting healing from magical well image" imageClassName="landingContentInlineImages" />
+                          <ViewSelectedImage imageSource={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/PlayerDeniedEntry.png'  } imageSourceThumbNail={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/PlayerDeniedEntry_Thumbnail.png' } imageAltText="Player denied entry to the castle" imageClassName="landingContentInlineImages" />
+                          <ViewSelectedImage imageSource={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/HealingSpellTest.png'  } imageSourceThumbNail={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/HealingSpellTest_Thumbnail.png' } imageAltText="Player Testing his healing ability" imageClassName="landingContentInlineImages" />
+                          <ViewSelectedImage imageSource={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/ArchersTest.gif'  } imageSourceThumbNail={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/ArchersTest_Thumbnail.gif' } imageAltText="Archers shooting at players current position - TEST" imageClassName="landingContentInlineImages" />
                         </div>
                       </div>
                     </div>
@@ -101,7 +101,7 @@ class Landing extends Component {
                           />
                           */ }
 
-                          <ViewSelectedImage imageSource={ process.env.PUBLIC_URL + '/Images/ProjectImages/WashOff/WashOff_Title.png' } imageSourceThumbNail={ process.env.PUBLIC_URL + '/Images/ProjectImages/WashOff/WashOff_Title_ThumbNail.png' } imageAltText="Wash Off - Game got some networking updates - title image" imageClassName="landingContentInlineImages" />
+                          <ViewSelectedImage imageSource={ process.env.PUBLIC_URL + '/Images/ProjectImages/WashOff/WashOff_Title.png' } imageSourceThumbNail={ process.env.PUBLIC_URL + '/Images/ProjectImages/WashOff/WashOff_Title_Thumbnail.png' } imageAltText="Wash Off - Game got some networking updates - title image" imageClassName="landingContentInlineImages" />
                           
 
                         </div>
