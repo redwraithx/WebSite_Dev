@@ -4,149 +4,180 @@ import GetVideo from '../ProjectData/GetVideo';
 import '../ProjectData/GetVideo.css';
 import '.././Landing.css';
 import LoadFooter from './LoadFooter';
+import ViewSelectedImage from './ViewSelectedImage';
+
 
 const tempImage = "/Images/ProjectImages/defaultProjectImage.png";
+
+const publicURL = process.env.PUBLIC_URL;
+
 
 
 class Landing extends Component {
 
+
+
+
+
   render() {
     return(
-      <div style={{width: '100%', height: 'auto', marginTop: '0px' }}  >
-        <Grid className="landing-grid">
-          <Cell col={12}>
+      
+        <div style={{width: '100%', height: 'auto', marginTop: '0px' }}  >
 
-            <div className="banner-text">
-              <h2 className="landingTop" style={{ paddingBottom: '15px' }}>Video Game Programming and Design</h2>
 
-              <div style={{ padding: '10px', overflow: 'auto', paddingTop: '0px' }} >
-                <div style={{ padding: '20px', textAlign: 'left', color: 'grey' }}>
+          <Grid className="landing-grid">
+            <Cell col={12}>
 
-                  {/* Start Entry */}
-                  { /*
-                  <div style={{ marginBottom: '15px' }}>
-                    <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
-                      <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;A Knights Journey&nbsp;&nbsp;</div>
-                      <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 9/21/2021 ]</div>
-                    </div>
-                    <div style={{ display: 'grid' }}>
-                      <div className="landingContentBody"  >Body</div>
-                      <div style={{ display: 'inline', border: '1px solid magenta', justifyContent: 'right',  }}>
-                        <a className="landingContentInlineImages">Image1</a>
-                        <a className="landingContentInlineImages">Image2</a>
-                        <a className="landingContentInlineImages">Image3</a>
+              <div className="banner-text">
+                <h2 className="landingTop" style={{ paddingBottom: '15px' }}>Video Game Programming and Design</h2>
+
+                <div style={{ padding: '10px', overflow: 'auto', paddingTop: '0px' }} >
+                  <div style={{ padding: '20px', textAlign: 'left', color: 'grey' }}>
+
+                    {/* Start Entry */}
+                    { /*
+                    <div style={{ marginBottom: '15px' }}>
+                      <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
+                        <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;A Knights Journey&nbsp;&nbsp;</div>
+                        <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 9/21/2021 ]</div>
                       </div>
-                    </div>
-                  </div>
-                  */ }
-                  {/* End Entry */}
-
-
-                  {/* Start Entry */}
-                  <div style={{ marginBottom: '15px' }}>
-                    <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
-                      <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;A Knights Journey&nbsp;&nbsp;</div>
-                      <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 9/21/2021 ]</div>
-                    </div>
-                    <div style={{ display: 'grid' }}>
-                      <div className="landingContentBody" >
-                        Working on a game called "A Knights Journey". This game will be a 3rd person game using kinematic characters where I will be dealing with all the physics myself except for any static characters such as castle guards which do not interact with the world except to turn away the player if approached.
-                      </div>
-                      <div className="landingContentImagesFrame" style={{ width: '100%', height: 'auto' }} >
-                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/PlayerAtHealingWell.png' } alt="Player getting healing from magical well" />
-                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/PlayerDeniedEntry.png' } alt="Player denied entry to the castle" />
-                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/HealingSpellTest.png' } alt="Player Testing his healing ability" />
-                        <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/ArchersTest.gif' } alt="Archers shooting at players current position - TEST" />
-                      </div>
-                    </div>
-                  </div>
-                  {/* End Entry */}
-
-                  <div style={{ marginBottom: '15px' }}>
-                    <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
-                      <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;Wash Out game update&nbsp;&nbsp;</div>
-                      <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 9/17/2021 ]</div>
-                    </div>
-                    <div style={{ display: 'grid' }}>
-                      <div className="landingContentBody" > 
-                        Bug fixes for network interactions and updated player binary save data for future use.
-                      </div>
-                      <div className="landingContentImagesFrame" style={{  width: '100%', height: 'auto' }} >
-                        <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + '/Images/ProjectImages/WashOff/WashOff_ThumbNail.png'} />
-                      </div>
-                    </div>
-                  </div>
-                  
-
-                  <div style={{ marginBottom: '15px' }}>
-                    <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
-                      <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;Turret Blaster game update&nbsp;&nbsp;</div>
-                      <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 9/17/2021 ]</div>
-                    </div>
-                    <div style={{ display: 'grid' }}>
-                      <div className="landingContentBody" > 
-                        Fixed some bugs and created a rifle for the player to visually shoot from.<br />NOTE: This is not something I normally do but nothing else was working at the time.
-                      </div>
-                      <div className="landingContentImagesFrame" style={{  width: '100%', height: 'auto' }} >
-                        <div className="landingContentVideoStyle" style={{ width: '247px', height: '138px',  }} >
-                          <GetVideo embedId="Dlsj1gUE_Kw"  />
+                      <div style={{ display: 'grid' }}>
+                        <div className="landingContentBody"  >Body</div>
+                        <div style={{ display: 'inline', border: '1px solid magenta', justifyContent: 'right',  }}>
+                          <a className="landingContentInlineImages">Image1</a>
+                          <a className="landingContentInlineImages">Image2</a>
+                          <a className="landingContentInlineImages">Image3</a>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  
-                  
-                  <div style={{ marginBottom: '15px' }}>
-                    <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
-                      <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;WebSite rebuild first Update&nbsp;&nbsp;</div>
-                      <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 9/5/2021 ]</div>
-                    </div>
-                    <div style={{ display: 'grid' }}>
-                      <div className="landingContentBody" > 
-                        This is the first day the website was pushed online.
+                    */ }
+                    {/* End Entry */}
+
+
+                    {/* Start Entry */}
+                    <div style={{ marginBottom: '15px' }}>
+                      <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
+                        <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;A Knights Journey&nbsp;&nbsp;</div>
+                        <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 9/21/2021 ]</div>
+                      </div>
+                      <div style={{ display: 'grid' }}>
+                        <div className="landingContentBody" >
+                          Working on a game called "A Knights Journey". This game will be a 3rd person game using kinematic characters where I will be dealing with all the physics myself except for any static characters such as castle guards which do not interact with the world except to turn away the player if approached.
+                        </div>
+                        <div className="landingContentImagesFrame" style={{ width: '100%', height: 'auto' }} >
+                          <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/PlayerAtHealingWell.png' } alt="Player getting healing from magical well" />
+                          <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/PlayerDeniedEntry.png' } alt="Player denied entry to the castle" />
+                          <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/HealingSpellTest.png' } alt="Player Testing his healing ability" />
+                          <img className="landingContentInlineImages" src={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/ArchersTest.gif' } alt="Archers shooting at players current position - TEST" />
+                        </div>
                       </div>
                     </div>
-                  </div>
+                    {/* End Entry */}
 
+                    <div style={{ marginBottom: '15px' }}>
+                      <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
+                        <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;Wash Out game update&nbsp;&nbsp;</div>
+                        <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 9/17/2021 ]</div>
+                      </div>
+                      <div style={{ display: 'grid' }}>
+                        <div className="landingContentBody" > 
+                          Bug fixes for network interactions and updated player binary save data for future use.
+                        </div>
+                        <div  className="landingContentImagesFrame" style={{  width: '100%', height: 'auto' }} >
+                        { /* <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + '/Images/ProjectImages/WashOff/WashOff_Title_ThumbNail.png'} /> */ }
+
+                       { /*  
+                        <img 
+                          id="img1"
+                          className="landingContentInlineImages" 
+                          src={ process.env.PUBLIC_URL + '/Images/ProjectImages/WashOff/WashOff_Title_ThumbNail.png' } 
+                          alt="Archers shooting at players current position - TEST" 
+                          onClick={() => console.log("image was clicked"), <ViewSelectedImage imageSource={this.src} /> }
+                          />
+                          */ }
+
+                          <ViewSelectedImage imageSource={ process.env.PUBLIC_URL + '/Images/ProjectImages/WashOff/WashOff_Title.png' } imageSourceThumbNail={ process.env.PUBLIC_URL + '/Images/ProjectImages/WashOff/WashOff_Title_ThumbNail.png' } imageAltText="Wash Off - Game got some networking updates - title image" imageClassName="landingContentInlineImages" />
+                          
+
+                        </div>
+                      </div>
+                    </div>
+                    
+
+                    <div style={{ marginBottom: '15px' }}>
+                      <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
+                        <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;Turret Blaster game update&nbsp;&nbsp;</div>
+                        <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 9/17/2021 ]</div>
+                      </div>
+                      <div style={{ display: 'grid' }}>
+                        <div className="landingContentBody" > 
+                          Fixed some bugs and created a rifle for the player to visually shoot from.<br />NOTE: This is not something I normally do but nothing else was working at the time.
+                        </div>
+                        <div className="landingContentImagesFrame" style={{  width: '100%', height: 'auto' }} >
+                          <div className="landingContentVideoStyle" style={{ width: '247px', height: '138px',  }} >
+                            <GetVideo embedId="Dlsj1gUE_Kw"  />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                    <div style={{ marginBottom: '15px' }}>
+                      <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
+                        <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;WebSite rebuild first Update&nbsp;&nbsp;</div>
+                        <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 9/5/2021 ]</div>
+                      </div>
+                      <div style={{ display: 'grid' }}>
+                        <div className="landingContentBody" > 
+                          This is the first day the website was pushed online.
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+
+                <h2 className="landingBottom" style={{  }} >            </h2>
+
+                <div className="social-links">
+
+                  {/* LinkedIn */}
+                  <a href="https://www.linkedin.com/in/brianpurdy01" rel="noopener noreferrer" target="_blank">
+                    <img src={process.env.PUBLIC_URL + "/Images/SocialIcons/linkedin_512x512_white.png"} height="50px" width="50px" className="SocialMediaLinks" alt="LinkedIn Image Icon" />
+                    {/* <i className="fa fa-linkedin-square SocialMediaLinks" aria-hidden="true" aria-label="View my LinkedIn" /> */ }
+                  </a>
+                
+                  {/* Github */}
+                  <a href="https://github.com/redwraithx/" rel="noopener noreferrer" target="_blank" className="SocialMediaLinks" >
+                    <img src={process.env.PUBLIC_URL + "/Images/SocialIcons/github_512x512_white.png"} height="50px" width="50px" alt="LinkedIn Image Icon" />
+                    {/* <i className="fa fa-github-square" aria-hidden="true" aria-label="View my github"  /> */}
+                  </a>
+
+                  {/* Youtube */}
+                  <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                    <img src={process.env.PUBLIC_URL + "/Images/SocialIcons/youtube_512x512_white.png"} height="50px" width="50px" className="SocialMediaLinks" alt="LinkedIn Image Icon" />
+                    { /* <i className="fa fa-youtube-square" aria-hidden="true" aria-label="View my Youtube"  /> */ }
+                  </a>
 
                 </div>
               </div>
-
-              <h2 className="landingBottom" style={{  }} >            </h2>
-
-              <div className="social-links">
-
-                {/* LinkedIn */}
-                <a href="https://www.linkedin.com/in/brianpurdy01" rel="noopener noreferrer" target="_blank">
-                  <img src={process.env.PUBLIC_URL + "/Images/SocialIcons/linkedin_512x512_white.png"} height="50px" width="50px" className="SocialMediaLinks" alt="LinkedIn Image Icon" />
-                  {/* <i className="fa fa-linkedin-square SocialMediaLinks" aria-hidden="true" aria-label="View my LinkedIn" /> */ }
-                </a>
-              
-                {/* Github */}
-                <a href="https://github.com/redwraithx/" rel="noopener noreferrer" target="_blank" className="SocialMediaLinks" >
-                  <img src={process.env.PUBLIC_URL + "/Images/SocialIcons/github_512x512_white.png"} height="50px" width="50px" alt="LinkedIn Image Icon" />
-                  {/* <i className="fa fa-github-square" aria-hidden="true" aria-label="View my github"  /> */}
-                </a>
-
-                {/* Youtube */}
-                <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-                  <img src={process.env.PUBLIC_URL + "/Images/SocialIcons/youtube_512x512_white.png"} height="50px" width="50px" className="SocialMediaLinks" alt="LinkedIn Image Icon" />
-                  { /* <i className="fa fa-youtube-square" aria-hidden="true" aria-label="View my Youtube"  /> */ }
-                </a>
-
-              </div>
-            </div>
-          </Cell>
-        </Grid>
-        <div style={{ paddingTop: '0px'  }} />
-
-        
+            </Cell>
+          </Grid>
+          <div style={{ paddingTop: '0px'  }} />
 
           <LoadFooter />
-        
+          
+          
+          
+          
+          
 
-      </div>
+        </div>
 
+         
+
+      
       
     )
   }
