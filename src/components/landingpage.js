@@ -29,11 +29,13 @@ class Landing extends Component {
             <Cell col={12}>
 
               <div className="banner-text">
-                <h2 className="landingTop" style={{ paddingBottom: '15px' }}>Video Game Programming and Design</h2>
+                <h2 className="landingTop" style={{ paddingBottom: '15px' }}>Video Game Programmer and Designer</h2>
 
                 <div style={{ padding: '10px', overflow: 'auto', paddingTop: '0px' }} >
                   <div style={{ padding: '20px', textAlign: 'left', color: 'grey' }}>
-                    
+                    <h3 style={{ textAlign: 'center' }}>Welcome to my Portfolio! Here you will find samples of my work in Video Game Programming and Design.</h3>
+                    <br />
+                    <br />
 
                     {/* Start Entry */}
                     { /*
@@ -59,12 +61,12 @@ class Landing extends Component {
                     {/* Start Entry */}
                     <div style={{ marginBottom: '15px' }}>
                       <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
-                        <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;A Knights Journey&nbsp;&nbsp;</div>
+                        <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;A Knight's Journey&nbsp;&nbsp;</div>
                         <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 9/21/2021 ]</div>
                       </div>
                       <div style={{ display: 'grid' }}>
                         <div className="landingContentBody" >
-                          Working on a game called "A Knights Journey". This game will be a 3rd person game using kinematic characters where I will be dealing with all the physics myself except for any static characters such as castle guards which do not interact with the world except to turn away the player if approached.
+                        I am currently working on a game called "A Knight’s Journey". This game will be a 3rd person game, using kinematic characters. I will be programming all the physics myself with the exception of any static characters such as castle guards.
                         </div>
                         <div className="landingContentImagesFrame" style={{ width: '100%', height: 'auto' }} >
                           <ViewSelectedImage imageSource={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/PlayerAtHealingWell.png' } imageSourceThumbNail={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/9-21-2021/PlayerAtHealingWell_Thumbnail.png' } imageAltText="Player getting healing from magical well image" imageClassName="landingContentInlineImages" />
@@ -81,12 +83,12 @@ class Landing extends Component {
                     {/* Start Entry */}
                     <div style={{ marginBottom: '15px' }}>
                       <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
-                        <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;Wash Out game update&nbsp;&nbsp;</div>
+                        <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;Wash Off Game Bug Fixes&nbsp;&nbsp;</div>
                         <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 9/17/2021 ]</div>
                       </div>
                       <div style={{ display: 'grid' }}>
                         <div className="landingContentBody" > 
-                          Bug fixes for network interactions and updated player binary save data for future use.
+                        This most recent update includes bug fixes for network interactions and updated player-data variables.
                         </div>
                         <div  className="landingContentImagesFrame" style={{  width: '100%', height: 'auto' }} >
                         { /* <img className="landingContentInlineImages" src={process.env.PUBLIC_URL + '/Images/ProjectImages/WashOff/WashOff_Title_ThumbNail.png'} /> */ }
@@ -113,12 +115,12 @@ class Landing extends Component {
                     {/* Start Entry */}
                     <div style={{ marginBottom: '15px' }}>
                       <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
-                        <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;Turret Blaster game update&nbsp;&nbsp;</div>
+                        <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;Turret Blaster Game Update&nbsp;&nbsp;</div>
                         <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 9/17/2021 ]</div>
                       </div>
                       <div style={{ display: 'grid' }}>
                         <div className="landingContentBody" > 
-                          Fixed some bugs and created a rifle for the player to visually shoot from.<br />NOTE: This is not something I normally do but nothing else was working at the time.
+                        In this update, I fixed some bugs and created a rifle for the player to visually shoot from.<br />NOTE: Creating models is not something I normally do, however the assets I had were not compatible with the version of Unreal I was using.
                         </div>
                         <div className="landingContentImagesFrame" style={{  width: '100%', height: 'auto' }} >
                           <div className="landingContentVideoStyle" style={{ width: '247px', height: '138px',  }} >
@@ -134,12 +136,12 @@ class Landing extends Component {
                     {/* Start Entry */}
                     <div style={{ marginBottom: '15px' }}>
                       <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
-                        <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;WebSite rebuild first Update&nbsp;&nbsp;</div>
+                        <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;WebSite Rebuild; First Update &nbsp;&nbsp;</div>
                         <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 9/5/2021 ]</div>
                       </div>
                       <div style={{ display: 'grid' }}>
                         <div className="landingContentBody" > 
-                          This is the first day the website was pushed online.
+                        This is the first day the website was pushed online.
                         </div>
                       </div>
                     </div>

@@ -63,8 +63,9 @@ class App extends Component {
         </Header>
 
 
-        <Drawer className="Drawer-SideBar" id="SideBar" aria-expanded="false" title={<Link style={{textDecoration: 'none', color: 'black'}} to='/'>My Site Links</Link>}>
-            <Navigation >
+        <Drawer className="Drawer-SideBar" id="SideBar" aria-expanded="false" title={<Link style={{ textDecoration: 'none', color: 'black', fontSize: 'medium', paddingRight: '18px', textAlign: 'center' }} to='/'>BrianPurdy.ca Site Links</Link>}>
+          
+            <Navigation style={{  }}>
               <Link onClick={IconToggle} to='/' className="Nav-Links" className="Nav-SideBar">Home</Link>
               { /* <Link onClick={IconToggle} to='/resume' className="Nav-Links" className="Nav-SideBar">Resume</Link> */ }
               <Link onClick={IconToggle} to='/aboutme' className="Nav-Links" className="Nav-SideBar">About Me</Link>

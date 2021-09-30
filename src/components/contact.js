@@ -20,9 +20,8 @@ class Contact extends Component {
               />
               <h2 className style={{ color: '#84d2f6', marginTop: '1em', marginBottom: '20px' }}>Brian Purdy</h2>
             <p style={{ color: 'lightgray', textAlign: 'left', fontSize: '130%', maxWidth: '65%', margin: 'auto', paddingTop: '4px', paddingLeft: '4px', paddingRight: '4px', paddingBottom: '4px' }}>
-              Learning is a journey not a destination, if you have suggestions on my next personal project or just want to network.
-              Send me an email.<br /><br />
-              Until then cheers!
+            Learning is a journey not a destination. If you have suggestions on my next personal project or just want to network, send me an email.<br /><br />
+              Until then, cheers!
             </p>
 
           { /* </Cell>

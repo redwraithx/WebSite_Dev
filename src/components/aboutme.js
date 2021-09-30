@@ -19,22 +19,21 @@ class About extends Component {
               
               <h5 className="aboutMeEntryHeader" ><u>About Me</u></h5>
               
-              I am a recent graduate of the Toronto Film School where I received a Diploma in Video Game Programming and Designer. 
-              Currently searching for work where being a part of a team means delivering great games and content to people who love to Game! 
-              I dream of being a part of a company that inspire the next generation of players and programmers alike while making great games. 
-              As someone committed to self-growth and ongoing learning, I am currently working on programming a new game having turned off the internal game physics. 
-              All the physics is kinematically programmed and the game is using state-based AI.<br />
+              I am a recent graduate of the Toronto Film School where I received a Diploma in Game Programming and Design. I am searching for work where being a part of a team means delivering great games and content to people who love to Game!  I dream of being a part of a company that creates games that inspire the next generation of players and programmers.
+
+As someone committed to self-growth and ongoing learning, I am currently working on programming a new game having turned off the internal game physics. The physics is kinematically programmed and the game is state-based AI.
+                <br />
                
 
             </div>
-            <div className="aboutMeEntryStyle2" style={{  }} hidden >
+            <div className="aboutMeEntryStyle2" style={{  }}  >
 
               <h5 className="aboutMeEntryHeader" ><u>My Role with our Capstone Project: Wash Off</u></h5>
 
-              I was the Programming Director/Network programmer/General GamePlay programmer and assisted the programmers in code or with design direction. 
-              As the sole Networking programmer, I had a steep hill to climb but I did preveil with a lot of research and experimentation. 
-              I was also the sole Networking programmer. 
-              Working as a team in several roles, I helped create multiple game play systems including the machines, the item and item-grab programming, the game and audio manager, and the level manager,
+              Working as a team in several roles, I helped create multiple game play systems including the machines, the item and item-grab programming, the game and audio manager, and the level manager. &nbsp;My official title was Programming Director and I assisted the programmers in code or with design direction. 
+I was also the sole Networking Programmer.
+
+
                
 
             </div>
@@ -43,11 +42,17 @@ class About extends Component {
               
               <h5 className="aboutMeEntryHeader" ><u>Recent Work</u></h5>
               
-              I use to work as an I.T. Junior Systems Administrator at the N.S Halifax Convention Centre. 
-              This is where I really started to use my skills to make some of the everyday tasks I did more automated through little applications, like the network COM Room tester app in my c# projects.               This saved me time, when I had to run around checking 23 different communication rooms to make sure they were online.<br />
-              I did this while we were still sourcing a network management solution and during the new buildings construction. 
-              When my contract was up I decided that I was going to follow my heart and transition into game development. 
-              This has been a great experience to not only learn from others who have worked in big and small studios, but also to lend my experiences and help those that are just starting out as well.<br />
+              I previously worked in IT as a Junior Systems Administrator with the Halifax Convention Centre. 
+              I specialized in Networking and WiFi Configuration as the Centre relocated to its new, main location.<br /><br />
+  
+ 
+              This position is where I really started to use my programming skills to make some of the everyday tasks more automated. 
+              An example of this would be the ‘Network Communication-Room Monitor’ app in my C# projects. 
+              This saved the company time, as an employee no longer needed to physically check 23 different communication rooms to make sure they were online.
+<br />
+              
+<br />When my contract finished, I decided to return to school and transition into game development. I was looking forward to learning from others who had experience in big and small studios. 
+              <br />
                
 
             </div>
