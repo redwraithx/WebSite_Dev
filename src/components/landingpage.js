@@ -33,7 +33,7 @@ class Landing extends Component {
 
                 <div style={{ padding: '10px', overflow: 'auto', paddingTop: '0px' }} >
                   <div style={{ padding: '20px', textAlign: 'left', color: 'grey' }}>
-                    <h3 style={{ textAlign: 'center' }}>Welcome to my Portfolio! Here you will find samples of my work in Video Game Programming and Design.</h3>
+                    <h3 style={{ textAlign: 'center' }}>Welcome to my Portfolio! On this page, you will find samples of my current work and recent updates. Please see my Projects page for completed work. </h3>
                     <br />
                     <br />
 
