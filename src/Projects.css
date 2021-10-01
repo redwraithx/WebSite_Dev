@@ -71,3 +71,12 @@
   .ProjectsMouseOver:hover {
     background-color: gray;
   }
+
+.scrollToTopButton {
+  float:none;
+  position: fixed;
+  left: 15px;
+  bottom: 22px;
+  width: 80px;
+  height: 80px;
+}

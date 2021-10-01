@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import { Tabs, Tab } from 'react-mdl';
 import UnityProjectsFetchClass from '../ProjectData/UnityProjectsFetchClass';
 import CSharpProjectsFetchClass from '../ProjectData/CSharpProjectsFetchClass';
@@ -8,14 +8,19 @@ import OtherProjectsFetchClass from '../ProjectData/OtherProjectsFetchClass';
 import '.././Projects.css';
 import '../ProjectData/ScrollToTop';
 import LoadFooter from './LoadFooter';
-import ScrollToTopButton from '../ProjectData/ScrollToTop';
+
 
 
 
 class Projects extends Component {
   constructor(props) {
     super(props);
-    this.state = { activeTab: 0 };
+    this.state = { 
+      activeTab: 0,
+      
+    };
+
+    
   }
 
   
@@ -27,8 +32,6 @@ class Projects extends Component {
     if(this.state.activeTab === 0) {
       return(
         <div  style={{ alignContent: 'center', justifyContent: 'center', background: 'repeat linear-gradient(to right, #1d2d44, #001f54, #1d2d44)', backgroundAttachment: 'fixed' }} > 
-
-          
           <UnityProjectsFetchClass />
           <LoadFooter  />
 
@@ -111,9 +114,16 @@ class Projects extends Component {
       </div >
 
         
-        {this.toggleCategories()}
+        {
+          this.toggleCategories()          
+        }
             
+
         
+
+        {/* <button onClick={console.log("goto top button pressed"), window.scrollTo(0, 0)} >
+          <img className="scrollToTopButton" src={process.env.PUBLIC_URL + "/Images/MyIcons/ScrollToTopArrowV2.png"}  alt='Go to top' style={{  }}  />
+        </button> */}
 
       </div>
     )

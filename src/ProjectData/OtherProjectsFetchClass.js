@@ -11,7 +11,7 @@ import './GetVideo.css';
 const OtherProjectsFetchClass = () => {
 
     const projectInfo = [
-        { gameName: 'Willand\'s Tomb', engineName: 'Construct', codeLanguage: 'Construct', numberOfMonthsToCreate: 3, createdBy: 'Brian Purdy', description: 'The player is an investigator who falls into an old tomb while searching for Dr. Willand. Before finding the tomb, the player triggers an ancient trap that causes the ground to swallow him/her. The object of the game is to escape from the tomb with one’s life...if one can.', videoURL: 'ec6c_6Kj-98',  imgURL: '', gitHubURL: '', playOrDownloadURL: 'https://redwraithx.itch.io/willandstomb-final', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
+        { gameName: 'Willand\'s Tomb', engineName: 'Construct', codeLanguage: 'Construct', numberOfMonthsToCreate: 3, createdBy: 'Brian Purdy', description: 'The player is an investigator who falls into an old tomb while searching for Dr. Willand. Before finding the tomb, the player triggers an ancient trap that causes the ground to swallow him/her. The object of the game is to escape from the tomb with one’s life... if one can.', videoURL: 'ec6c_6Kj-98',  imgURL: '', gitHubURL: '', playOrDownloadURL: 'https://redwraithx.itch.io/willandstomb-final', comingSoonIMG: '/Images/ProjectImages/coming-soon.png' },
 
     ];
 

@@ -3,8 +3,7 @@ import './App.css';
 import {Layout, Header, Navigation, Drawer, Content, IconToggle, IconButton } from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
-import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
-import ScrollToTopButton from './ProjectData/ScrollToTop';
+
 
 const menuItems = [
   'Home',
@@ -47,7 +46,6 @@ class App extends Component {
             </div>
 			  
             </Link>} >
-
   
             <Navigation className="Nav-MainBar">  
                 <Link 
