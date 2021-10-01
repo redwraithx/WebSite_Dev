@@ -168,7 +168,7 @@ class Landing extends Component {
                   </a>
 
                   {/* Youtube */}
-                  <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                  <a href="http://google.com" rel="noopener noreferrer" target="_blank" hidden>
                     <img src={process.env.PUBLIC_URL + "/Images/SocialIcons/youtube_512x512_white.png"} height="50px" width="50px" className="SocialMediaLinks" alt="LinkedIn Image Icon" />
                     { /* <i className="fa fa-youtube-square" aria-hidden="true" aria-label="View my Youtube"  /> */ }
                   </a>
