@@ -253,7 +253,7 @@ class Resume extends Component {
 
                           <div style={{ width: '280px', display: 'inline-flex' }}>
                             { /* <div style={{ margin: '5px' }} summary="icon" >test</div> */ }
-                            <img src={process.env.PUBLIC_URL + "/Images/MyIcons/ResumeIcons/UrlIcon.PNG"} width="32px" height="32px" style={{ alignSelf: 'left' }} />
+                            <img src={process.env.PUBLIC_URL + "/Images/MyIcons/ResumeIcons/UrlIcon.png"} width="32px" height="32px" style={{ alignSelf: 'left' }} />
                             <div style={{ marginLeft: '5px', margin: '5px', fontSize: '18px' }} summary="iconInfo" ><a href="https://brianpurdy.ca" target="_blank" >brianpurdy.ca</a></div>
                           </div>
 
