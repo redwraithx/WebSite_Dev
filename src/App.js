@@ -40,7 +40,7 @@ class App extends Component {
 
       <div style={{ border: '0px solid magenta', width: '100%', display: 'flex', justifyContent: 'flex-end', position: 'realitive', flexShrink: '1'  }}>
 
-      <img className="SiteImage2" src={process.env.PUBLIC_URL + "/Images/MyIcons/MyIcon_Small.png"} alt="Icon Image of Brian" />
+      { /* <img className="SiteImage2" src={process.env.PUBLIC_URL + "/Images/MyIcons/MyIcon_Small.png"} alt="Icon Image of Brian" /> */ }
 
         {/* <div style={{ border: '1px solid green', textAlign: 'center', zIndex: '1' }}> */ }
           {/* <div className="HeaderTitle" style={{ border: '0px solid magenta' }}> */ }

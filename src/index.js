@@ -10,7 +10,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Resume from './components/newresume';
 
 
+
+
 ReactDOM.render(
+
+  
+
   <React.StrictMode>
     <HashRouter scroll>
       

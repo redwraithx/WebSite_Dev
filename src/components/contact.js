@@ -13,7 +13,7 @@ class Contact extends Component {
   
   render() {
     return(
-      <div style={{width: '100%', margin: 'auto', marginTop: '4em' }}  >
+      <div style={{width: '100%', margin: 'auto', marginTop: '2em' }}  >
         <Grid className="contact-grid">
          <Cell col={6} style={{ marginBottom: '6em' }}>
             <img
