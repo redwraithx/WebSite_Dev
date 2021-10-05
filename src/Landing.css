@@ -1,8 +1,14 @@
 .landingTop{
-    color: white;
+    color: ghostwhite;
     border-radius: 20%;
     border-bottom: 4px groove darkblue;
-    padding-top: 15px;
+    padding-top: 0px;
+}
+
+.landingTopName {
+    color: white;
+    padding-top: 10px;
+    font-size: 42px;
 }
 
 .landingBottom{

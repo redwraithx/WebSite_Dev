@@ -22,7 +22,9 @@ class App extends Component {
   }
   
   
-
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
     
 
   render() {
@@ -36,19 +38,19 @@ class App extends Component {
 
     <Layout>
 
-      <div style={{ border: '0px solid magenta', width: '100%', display: 'flex', justifyContent: 'flex-end', position: 'realitive'  }}>
+      <div style={{ border: '0px solid magenta', width: '100%', display: 'flex', justifyContent: 'flex-end', position: 'realitive', flexShrink: '1'  }}>
 
       <img className="SiteImage2" src={process.env.PUBLIC_URL + "/Images/MyIcons/MyIcon_Small.png"} alt="Icon Image of Brian" />
 
         {/* <div style={{ border: '1px solid green', textAlign: 'center', zIndex: '1' }}> */ }
           {/* <div className="HeaderTitle" style={{ border: '0px solid magenta' }}> */ }
             {/* <div className="" style={{ fontSize: '30px', paddingTop: '5px' }} >Wecome to</div> */}
-            <div style={{ color: '#84d2f6', fontSize: '26px', alignSelf: 'center', textAlign: 'center', float: 'unset', zIndex: '2' }}>Brian Purdy - Video Game Programmer and Designer</div>
+            <div className="test" style={{ color: '#84d2f6'}} hidden>Brian Purdy</div>
           {/* } </div> */ }
         {/* </div> */}
 
           
-          <Header style={{ border: '0px solid yellow', width: '34%', float: 'none', marginRight: '0px' }} className="header-color" title={<Link style={{ textDecoration: 'none', color: 'white', border: '0px solid yellow' }} to="/">
+          {/* <Header style={{ border: '0px solid yellow', width: '34%' }} className="header-color" title={<Link style={{ textDecoration: 'none', color: 'white', border: '0px solid yellow' }} to="/"> */}
 
         { /* <img className="SiteImage" src={process.env.PUBLIC_URL + "/Images/MyIcons/MyIcon_Small.png"} alt="Icon Image of Brian" align="left" /> */ }
 
@@ -59,7 +61,7 @@ class App extends Component {
             </div>
             */ }
 
-            
+          <Header style={{ border: '0px solid yellow', width: '100%' }} className="header-color1" title={<Link style={{ textDecoration: 'none', color: 'white', border: '0px solid yellow' }} to="/">
             </Link>} >
   
             <Navigation className="Nav-MainBar">  

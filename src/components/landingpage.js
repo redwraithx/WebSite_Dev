@@ -16,7 +16,9 @@ const publicURL = process.env.PUBLIC_URL;
 class Landing extends Component {
 
 
-
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
 
 
   render() {
@@ -29,6 +31,7 @@ class Landing extends Component {
             <Cell col={12}>
 
               <div className="banner-text">
+                <h2 className="landingTopName" style={{ paddingBottom: '0px' }}>Brian Purdy</h2>
                 <h2 className="landingTop" style={{ paddingBottom: '15px' }}>Video Game Programmer and Designer</h2>
 
                 <div style={{ padding: '10px', overflow: 'auto', paddingTop: '0px' }} >
