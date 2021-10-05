@@ -7,6 +7,7 @@ import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import './index.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import Resume from './components/newresume';
 
 
 ReactDOM.render(
@@ -14,6 +15,7 @@ ReactDOM.render(
     <HashRouter scroll>
       
       <App />
+      {/* <Resume /> */}
 
     </HashRouter>
   </React.StrictMode>

@@ -35,16 +35,31 @@ class App extends Component {
       
 
     <Layout>
-        
-        <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">
+
+      <div style={{ border: '0px solid magenta', width: '100%', display: 'flex', justifyContent: 'flex-end', position: 'realitive'  }}>
+
+      <img className="SiteImage2" src={process.env.PUBLIC_URL + "/Images/MyIcons/MyIcon_Small.png"} alt="Icon Image of Brian" />
+
+        {/* <div style={{ border: '1px solid green', textAlign: 'center', zIndex: '1' }}> */ }
+          {/* <div className="HeaderTitle" style={{ border: '0px solid magenta' }}> */ }
+            {/* <div className="" style={{ fontSize: '30px', paddingTop: '5px' }} >Wecome to</div> */}
+            <div style={{ color: '#84d2f6', fontSize: '26px', alignSelf: 'center', textAlign: 'center', float: 'unset', zIndex: '2' }}>Brian Purdy - Video Game Programmer and Designer</div>
+          {/* } </div> */ }
+        {/* </div> */}
+
           
-        <img className="SiteImage" src={process.env.PUBLIC_URL + "/Images/MyIcons/MyIcon_Small.png"} alt="Icon Image of Brian" align="left" />
+          <Header style={{ border: '0px solid yellow', width: '34%', float: 'none', marginRight: '0px' }} className="header-color" title={<Link style={{ textDecoration: 'none', color: 'white', border: '0px solid yellow' }} to="/">
+
+        { /* <img className="SiteImage" src={process.env.PUBLIC_URL + "/Images/MyIcons/MyIcon_Small.png"} alt="Icon Image of Brian" align="left" /> */ }
+
+            { /* this is for mobile screen sizes 
             <div className="HeaderTitle">
-              
               <div className="Header-Name" align="left">Wecome to</div>
               <div className="Header-SiteName" align="left">BrianPurdy.ca</div>
             </div>
-			  
+            */ }
+
+            
             </Link>} >
   
             <Navigation className="Nav-MainBar">  
@@ -52,27 +67,27 @@ class App extends Component {
                 style={ this.state.activeTab === 0 ? activeStyle : {} } 
                 //onClick={ this.setState({ activeTab: 0 }) } 
                 to='/' className="Nav-Links">Home</Link>
-                {/* <Link to='/resume' className="Nav-Links" >Resume</Link> */ }
-                <Link to='/aboutme' className="Nav-Links">About Me</Link>
                 <Link to='/projects' className="Nav-Links">Projects</Link>
+                <Link to='/aboutme' className="Nav-Links">About Me</Link>
+                <Link to='/newresume' className="Nav-Links" >Resume</Link>
                 <Link to='/contact' className="Nav-Links">Contact</Link>
             </Navigation>
             
         </Header>
-
+      </div>
 
         <Drawer className="Drawer-SideBar" id="SideBar" aria-expanded="false" title={<Link style={{ textDecoration: 'none', color: 'black', fontSize: 'medium', paddingRight: '18px', textAlign: 'center' }} to='/'>BrianPurdy.ca Site Links</Link>}>
           
             <Navigation style={{  }}>
               <Link onClick={IconToggle} to='/' className="Nav-Links" className="Nav-SideBar">Home</Link>
-              { /* <Link onClick={IconToggle} to='/resume' className="Nav-Links" className="Nav-SideBar">Resume</Link> */ }
-              <Link onClick={IconToggle} to='/aboutme' className="Nav-Links" className="Nav-SideBar">About Me</Link>
               <Link onClick={IconToggle} to='/projects' className="Nav-Links" className="Nav-SideBar">Projects</Link>
+              <Link onClick={IconToggle} to='/newresume' className="Nav-Links" className="Nav-SideBar">Resume</Link>
+              <Link onClick={IconToggle} to='/aboutme' className="Nav-Links" className="Nav-SideBar">About Me</Link>
               <Link onClick={IconToggle} to='/contact' className="Nav-Links" className="Nav-SideBar">Contact</Link>
             </Navigation>
         </Drawer>
 
-        
+         
 
         <Content>
             <div className="page-content" />
@@ -86,6 +101,8 @@ class App extends Component {
         
     </Layout>
 
+
+      
     
     
 </div>

@@ -1,7 +1,13 @@
-.header-color {
+.header-color3 {
   background: #1d2d44;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #1d2d44, #001f54, #1d2d44);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #1d2d44, #001f54, #1d2d44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header-color {
+ background: transparent !important;
+ backface-visibility: hidden !important;
+ box-shadow: none !important;
 }
 
 .landing-grid {
@@ -115,13 +121,25 @@
 }
 
 
-.header-color {
-  justify-self: auto !important;
-  display: inline-table !important;
+.header-color2 {
+  top: 0;
+  right: 0;
+  display:flex;
+  justify-content: right;
 }
 
 .SiteImage {
   position:absolute !important;
+  padding-top: 2px;
+}
+
+.SiteImage2 {
+  left: 0;
+  top: 15px;
+  margin-left: 70px;
+  position: absolute !important;
+  align-self: center !important;
+  
   padding-top: 2px;
 }
 
@@ -149,7 +167,12 @@
   font-size: large;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1830px) {
+
+.Nav-MainBar2 {
+  margin: 0;
+}
+
 
   .Nav-Links {
     justify-content: space-around !important;
