@@ -22,7 +22,7 @@ class Resume extends Component {
 
         <Grid >
           <Cell col={12}>
-            <div style={{ color: 'white', fontSize: '18px', paddingTop: '20px', paddingBottom: '20px', border: '0px solid magenta', display: 'flex', justifyContent: 'space-evenly' }}>
+            <div style={{ height: '30px', color: 'white', fontSize: '18px', marginTop: '20px', marginBottom: '5px', border: '1px solid magenta', display: 'grid', justifyContent: 'center', textAlign: 'center' }}>
               <div style={{ width: '250px', textAlign: 'center', border: '1px solid gray' }}>
                 <a className="ResumeDownload" href={process.env.PUBLIC_URL + "/Downloads/MyResume/BrianPurdyResume.pdf"} download >
                   Download my Resume Here
@@ -31,11 +31,11 @@ class Resume extends Component {
             </div>
           </Cell>
 
-          <Cell className="resume-right-col" col={12} style={{ width: '60%', border: '0px solid magenta' }} >
-            <div col={12} style={{ display: 'inline-flex', width: '100%', height: '100%' }} >
+          <Cell className="resume-right-col" col={12} style={{ width: '60%', border: '0px solid magenta', display: 'flex', justifyContent: 'center' }} >
+            <div col={12} style={{ width: '100%', height: 'auto' }} >
                 
                 
-                <table width="100%" height="100%" style={{ border: '0px solid cyan' }}>
+                <table width="100%" height="100%" style={{ border: '0px solid cyan'  }}>
                   <tbody>
                     <tr className="ResumeHeader" style={{ width: '100%', height: '150px', border: '0px solid magenta' }}>
                       <th colSpan="2" >

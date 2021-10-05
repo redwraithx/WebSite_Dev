@@ -6,6 +6,12 @@
 }
 
 .resume-right-col {
+  position: relative;
+  left: 19%;
+
+}
+
+.resume-right-col2 {
   
   position: absolute;
   left: 50%;
@@ -23,8 +29,6 @@
 .ResumeDownload:hover {
   color: #84d2f6;
   
-  padding: 0%;
-  margin: 0%;
 }
 
 
