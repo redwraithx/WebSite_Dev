@@ -71,12 +71,13 @@ class Landing extends Component {
                         <div className="landingContentBody" >
                         Testing out the players Healing ability and effects.
                         </div>
-                        <div style={{ display: 'inline-flex', width: '100%', height: 'auto'  }} >
-                          <div className="landingContentImagesFrame" style={{ }} >
-                            <ViewSelectedImage imageSource={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/10-7-2021/PlayerHealingTest.gif' } imageSourceThumbNail={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/10-7-2021/PlayerHealingTest_Thumbnail.gif' } imageAltText="Player casting a healing spell on themselves image" imageClassName="landingContentInlineImages" />
+                          
+                        <div style={{ display: 'inline-flex', flexWrap: 'wrap' }}>
+                          <div className="landingContentImagesFrame" style={{ height: 'auto' }} >
+                            <ViewSelectedImage  imageSource={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/10-7-2021/PlayerHealingTest.gif' } imageSourceThumbNail={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/10-7-2021/PlayerHealingTest_Thumbnail.gif' } imageAltText="Player casting a healing spell on themselves image" imageClassName="landingContentInlineImages" />
                           </div>
-                          <div className="landingContentVideoStyle" style={{ width: '247px', height: '138px', marginTop: '13px'  }} >
-                              <GetVideo embedId="zY434IR7xXU"  />
+                          <div className="landingContentVideoStyle" style={{ width: '247px', height: '138px', marginTop: '13px' }} >
+                            <GetVideo  embedId="zY434IR7xXU"  />
                           </div>
                         </div>
                       </div>

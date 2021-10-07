@@ -61,7 +61,27 @@ hr {
     
 }
 
+.landingContentImageAndVideoFrame {
+    display:inline-flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-content: space-around;
+}
+
 .landingContentInlineImages {
+    flex-wrap: wrap;
+    align-self: center;
+    border: 1px solid rgb(24, 23, 23);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 247px;
+    height: 138px;
+    
+}
+
+.landingContentInlineImage {
     flex-wrap: wrap;
     align-self: center;
     border: 1px solid rgb(24, 23, 23);
@@ -76,11 +96,18 @@ hr {
 
 
 
-
-
 .landingContentVideoStyle {
     padding-top: 0px;
 
+}
+
+.landingContentVideo {
+    flex-wrap: wrap;
+    align-self: center;
+    border: 1px solid rgb(24, 23, 23);
+    padding-top: 0px;
+    margin-top: 13px;
+    
 
 }
 

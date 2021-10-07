@@ -31,3 +31,15 @@
     z-index: 3;
     transform: translate(-50%, -50%);
 }
+
+.viewSelectedImageText {
+  position: relative;
+  top: -17%;
+  left: 25%;
+  color: black; 
+  background-color: gray; 
+  width: 150px;
+  border: 1px solid black;
+  text-align: center;
+  pointerEvents: none;
+}
