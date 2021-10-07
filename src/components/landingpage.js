@@ -69,7 +69,7 @@ class Landing extends Component {
                       <br />
                       <div style={{ display: 'inline-grid' }}>
                         <div className="landingContentBody" >
-                        Testing out the players Healing ability and effects.
+                          Here, I am testing out the player's Healing ability and effects.
                         </div>
                           
                         <div style={{ display: 'inline-flex', flexWrap: 'wrap' }}>

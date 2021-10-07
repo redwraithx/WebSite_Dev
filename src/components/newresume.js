@@ -49,7 +49,7 @@ class Resume extends Component {
                     </tr>
                     <tr align="center">
                       { /* Left Column */ }
-                      <th className="ResumeLeftColumnBG" style={{ width: '65%', border: '0px solid yellow', backgroundColor: 'white' }}>
+                      <th className="ResumeLeftColumnBG" style={{ top: '0', left: '0', width: '65%', border: '0px solid yellow', backgroundColor: 'white' }}>
                         
                         <div>
                           <div className="ProfessionSummaryHeader">
@@ -217,7 +217,7 @@ class Resume extends Component {
 
 
                       { /* Right Column */}
-                      <th className="ResumeRightColumnBG" style={{ color: 'black', width: '35%', border: '0px solid green' }}>
+                      <th className="ResumeRightColumnBG" style={{ top: '0', left: '0', color: 'black', width: '35%', border: '0px solid green' }}>
 
                         <div style={{ paddingTop: '10px', paddingBottom: '10px', border: '0px solid magenta' }}>
 
