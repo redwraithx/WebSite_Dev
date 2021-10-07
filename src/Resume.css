@@ -35,12 +35,16 @@
 }
 
 .ResumeContainer:hover {
+  width: 275px;
+  height: 30px;
   background-color: black; 
   color: white;
   border: 2px solid white;
 }
 
 .ResumeDownload {
+  width: 275px;
+  height: 30px;
   color: white;
   border: '1px solid black';
   justify-self: center;
@@ -48,6 +52,8 @@
 }
 
 .ResumeDownload:hover {
+  width: 275px;
+  height: 30px;
   color: #84d2f6;
   
 }
