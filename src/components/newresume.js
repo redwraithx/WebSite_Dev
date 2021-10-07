@@ -232,7 +232,7 @@ class Resume extends Component {
                             { /* <div style={{ margin: '5px' }} summary="icon" >test</div> */ }
                             <img src={process.env.PUBLIC_URL + "/Images/MyIcons/ResumeIcons/PhoneIcon.png"} width="32px" height="32px" style={{ alignSelf: 'left' }} />
                             <div style={{ marginLeft: '5px', marginTop: '5px', marginBottom: '5px', fontSize: '18px' }} summary="iconInfo" >(902) 210-8215</div>
-                          </div>`
+                          </div>
 
                           <div style={{ width: '280px', display: 'inline-flex' }}>
                             { /* <div style={{ margin: '5px' }} summary="icon" >test</div> */ }
