@@ -50,6 +50,8 @@ class ImageComponent extends Component {
           onClick={ this.handleShowDialog }
           alt={ this.newImage.imgAltText }
         />
+        <h5 style={{ textAlign: 'center', position: 'relative', top: '-20%', color: 'white' }}>Click to Enlarge</h5>
+
         {this.state.isOpen && (
           <dialog
             className="dialog"
