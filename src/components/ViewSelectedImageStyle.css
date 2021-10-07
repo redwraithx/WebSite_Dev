@@ -41,5 +41,5 @@
   width: 150px;
   border: 1px solid black;
   text-align: center;
-  pointerEvents: none;
+  pointer-events: none;
 }

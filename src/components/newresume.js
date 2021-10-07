@@ -20,8 +20,8 @@ class Resume extends Component {
     return(
       <div className="ResumePageFontStyle"  >
 
-        <Grid >
-          <Cell col={12}>
+        <Grid style={{ border: '0px solid cyan' }}>
+          <Cell  col={12}  style={{ border: '0px solid yellow' }}>
             
               <div className="ResumeContainer" style={{  }} >
                 <a className="ResumeDownload" href={process.env.PUBLIC_URL + "/Downloads/MyResume/BrianPurdyResume.pdf"} download >
@@ -33,9 +33,10 @@ class Resume extends Component {
             
           </Cell>
 
-          <Cell className="resume-right-col" col={12} style={{ width: '60%', border: '0px solid magenta', display: 'flex', justifyContent: 'center' }} >
-            <div col={12} style={{ width: '100%', height: 'auto' }} >
-                
+
+
+          <Cell  className="resume-right-col"  col={12} style={{ width: '1135px', border: '0px solid magenta', marginLeft: 'auto', marginRight: 'auto' }} >
+            <div className="resume-right-col-Section"  style={{ justifySelf: 'center' }} >
                 
                 <table width="100%" height="100%" style={{ border: '0px solid cyan'  }}>
                   <tbody>
@@ -49,7 +50,7 @@ class Resume extends Component {
                     </tr>
                     <tr align="center">
                       { /* Left Column */ }
-                      <th className="ResumeLeftColumnBG" style={{ top: '0', left: '0', width: '65%', border: '0px solid yellow', backgroundColor: 'white' }}>
+                      <th className="ResumeLeftColumnBG" style={{ top: '0', left: '0', width: '1135px', border: '0px solid yellow', backgroundColor: 'white' }}>
                         
                         <div>
                           <div className="ProfessionSummaryHeader">
@@ -217,7 +218,7 @@ class Resume extends Component {
 
 
                       { /* Right Column */}
-                      <th className="ResumeRightColumnBG" style={{ top: '0', left: '0', color: 'black', width: '35%', border: '0px solid green' }}>
+                      <th className="ResumeRightColumnBG" style={{ top: '0', left: '0', color: 'black', width: '120px', border: '0px solid green'  }}>
 
                         <div style={{ paddingTop: '10px', paddingBottom: '10px', border: '0px solid magenta' }}>
 
@@ -287,7 +288,7 @@ class Resume extends Component {
                           </i>
                         </div>
 
-                          <div style={{ width: '350px', display: 'flex' }}>
+                          <div style={{ width: '350px', display: 'flex', paddingRight: '10px' }}>
                             <ul >
                               <li className="SkillsList">
                                 Computer & Programming skills
@@ -329,7 +330,7 @@ class Resume extends Component {
                           </i>
                         </div>
 
-                          <div style={{ width: '350px', textAlign: 'left' }}>
+                          <div style={{ width: '350px', textAlign: 'left', paddingRight: '10px' }}>
 
                             <div style={{ fontSize: '17px', marginLeft: '10px' }}>
                               09/2021 - Toronto Film School, Toronto, ON<br />
@@ -362,7 +363,7 @@ class Resume extends Component {
                               07/2017 - Eastern College, Halifax, NS<br />
                               Diploma in IT Systems Administration: Information Technology<br /><br />
                             </div>
-                            <ul style={{ marginBottom: '20px' }} >
+                            <ul style={{ marginBottom: '20px', paddingRight: '10px' }} >
                               <li className="EducationList">
                                 Award of Excellence 2017
                               </li>

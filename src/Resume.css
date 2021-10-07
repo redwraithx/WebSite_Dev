@@ -6,9 +6,16 @@
 }
 
 .resume-right-col {
-  position: relative;
-  left: 19%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid red;
+  
+}
 
+.resume-right-col-Section {
+  margin: auto;
+  
 }
 
 .resume-right-col2 {
