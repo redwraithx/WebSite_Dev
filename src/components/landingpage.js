@@ -66,6 +66,7 @@ class Landing extends Component {
                         <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;A Knight's Journey&nbsp;&nbsp;</div>
                         <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 10/7/2021 ]</div>
                       </div>
+                      <br />
                       <div style={{ display: 'inline-grid' }}>
                         <div className="landingContentBody" >
                         Testing out the players Healing ability and effects.
