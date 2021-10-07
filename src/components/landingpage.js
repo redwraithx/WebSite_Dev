@@ -60,6 +60,23 @@ class Landing extends Component {
                     {/* End Entry */}
 
 
+                    {/* Start Entry */}
+                    <div style={{ marginBottom: '15px' }}>
+                      <div className="landingContentHeader" style={{ display: 'inline-flex' }}>
+                        <div style={{ borderTop: '1px solid gray', borderLeft: '2px solid grey'  }}>&nbsp;&nbsp;A Knight's Journey&nbsp;&nbsp;</div>
+                        <div style={{ paddingLeft: '10px', fontSize: 'small', color: 'grey' }}>[ Date: 10/7/2021 ]</div>
+                      </div>
+                      <div style={{ display: 'grid' }}>
+                        <div className="landingContentBody" >
+                        Testing out the players Healing ability and effect, this is 
+                        </div>
+                        <div className="landingContentImagesFrame" style={{ width: '100%', height: 'auto' }} >
+                          <ViewSelectedImage imageSource={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/10-7-2021/PlayerHealingTest.gif' } imageSourceThumbNail={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/10-7-2021/PlayerHealingTest_Thumbnail.gif' } imageAltText="Player casting a healing spell on themselves image" imageClassName="landingContentInlineImages" />
+                        </div>
+                      </div>
+                    </div>
+                    {/* End Entry */}
+
 
                     {/* Start Entry */}
                     <div style={{ marginBottom: '15px' }}>
