@@ -22,13 +22,15 @@ class Resume extends Component {
 
         <Grid >
           <Cell col={12}>
-            <div style={{ height: '30px', color: 'white', fontSize: '18px', marginTop: '20px', marginBottom: '5px', border: '0px solid magenta', display: 'grid', justifyContent: 'center', textAlign: 'center' }}>
-              <div style={{ width: '250px', textAlign: 'center', border: '1px solid gray' }}>
-                <a className="ResumeDownload" href={process.env.PUBLIC_URL + "/Downloads/MyResume/BrianPurdyResume.pdf"} download >
-                  Download my Resume Here
-                </a>
+            <a className="ResumeDownload" href={process.env.PUBLIC_URL + "/Downloads/MyResume/BrianPurdyResume.pdf"} download >
+              <div className="ResumeContainer" style={{  }}>
+                <div style={{ textAlign: 'center', border: '0px solid gray' }}>
+                  
+                    Download my Resume Here
+                  
+                </div>
               </div>
-            </div>
+            </a>
           </Cell>
 
           <Cell className="resume-right-col" col={12} style={{ width: '60%', border: '0px solid magenta', display: 'flex', justifyContent: 'center' }} >

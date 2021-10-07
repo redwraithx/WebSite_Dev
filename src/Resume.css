@@ -20,10 +20,31 @@
   
 }
 
+.ResumeContainer {
+  width: 275px;
+  height: 30px;
+  background-color: gray; 
+  font-size: 18px; 
+  margin-top: 20px; 
+  margin-bottom: 20px;
+  border: 2px solid white;
+  display: grid;
+  align-items: center;
+  position: relative; 
+  left: 42%;
+}
+
+.ResumeContainer:hover {
+  background-color: black; 
+  color: white;
+  border: 2px solid white;
+}
+
 .ResumeDownload {
   color: white;
-  border: '1px solid gray';
-  
+  border: '1px solid black';
+  justify-self: center;
+  text-align: center;
 }
 
 .ResumeDownload:hover {
