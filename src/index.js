@@ -8,8 +8,9 @@ import 'react-mdl/extra/material.js';
 import './index.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Resume from './components/newresume';
-
-
+import ReactGA from 'react-ga';
+const TRACKING_ID = "G-2QZWQM6HNW";
+ReactGA.initialize(TRACKING_ID);
 
 
 ReactDOM.render(
