@@ -69,15 +69,18 @@ class Landing extends Component {
                       <br />
                       <div style={{ display: 'inline-grid' }}>
                         <div className="landingContentBody" >
-                          Here, I am testing out the player's Healing ability and effects.
+                          Here, I am testing out the player's Healing ability and effects.<br /> I am also testing out the new lootable chests which give the player potential upgrades to his characters states.
                         </div>
                           
                         <div style={{ display: 'inline-flex', flexWrap: 'wrap' }}>
                           <div className="landingContentImagesFrame" style={{ height: 'auto' }} >
                             <ViewSelectedImage  imageSource={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/10-7-2021/PlayerHealingTest.gif' } imageSourceThumbNail={ process.env.PUBLIC_URL + '/Images/ProjectImages/KnightsJourney/10-7-2021/PlayerHealingTest_Thumbnail.gif' } imageAltText="Player casting a healing spell on themselves image" imageClassName="landingContentInlineImages" />
                           </div>
-                          <div className="landingContentVideoStyle" style={{ width: '247px', height: '138px', marginTop: '13px' }} >
+                          <div className="landingContentVideoStyle" style={{ width: '247px', height: '140px', marginTop: '13px', border: '1px solid grey' }} >
                             <GetVideo  embedId="zY434IR7xXU"  />
+                          </div>
+                          <div className="landingContentVideoStyle" style={{ width: '247px', height: '140px', marginTop: '13px', border: '1px solid grey', marginLeft: '70px',  }} >
+                            <GetVideo  embedId="avzFqAvU724"  />
                           </div>
                         </div>
                       </div>
@@ -150,7 +153,7 @@ class Landing extends Component {
                         In this update, I fixed some bugs and created a rifle for the player to visually shoot from.<br />NOTE: Creating models is not something I normally do, however the assets I had were not compatible with the version of Unreal I was using.
                         </div>
                         <div className="landingContentImagesFrame" style={{  width: '100%', height: 'auto' }} >
-                          <div className="landingContentVideoStyle" style={{ width: '247px', height: '138px',  }} >
+                          <div className="landingContentVideoStyle" style={{ width: '247px', height: '140px', border: '1px solid gray'  }} >
                             <GetVideo embedId="Dlsj1gUE_Kw"  />
                           </div>
                         </div>

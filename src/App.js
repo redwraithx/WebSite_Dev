@@ -79,7 +79,7 @@ class App extends Component {
         </Header>
       </div>
 
-        <Drawer className="Drawer-SideBar" id="SideBar" aria-expanded="false" title={<Link style={{ textDecoration: 'none', color: 'black', fontSize: 'medium', paddingRight: '18px', textAlign: 'center' }} to='/'>BrianPurdy.ca Site Links</Link>}>
+        <Drawer className="Drawer-SideBar" style={{ backgroundColor: '#1d2d44', textAlign: 'center' }} id="SideBar" aria-expanded="false" title={<Link style={{ textDecoration: 'none', color: 'white', fontSize: 'larger', paddingRight: '40px'  }} to='/'>Site Links</Link>}>
           
             <Navigation style={{  }}>
               <Link onClick={IconToggle} to='/' className="Nav-Links" className="Nav-SideBar">Home</Link>

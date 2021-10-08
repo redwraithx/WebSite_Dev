@@ -18,7 +18,7 @@ class Resume extends Component {
 
   render() {
     return(
-      <div className="ResumePageFontStyle"  >
+      <div className="ResumePageFontStyle" style={{ minWidth: '1200px', minHeight: '900' }} >
 
         <Grid style={{ border: '0px solid cyan' }}>
           <Cell  col={12}  style={{ border: '0px solid yellow' }}>
