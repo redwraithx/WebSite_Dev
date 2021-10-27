@@ -17,7 +17,7 @@ class About extends Component {
         <Grid className="aboutme-grid">
          
           <div className="aboutMeEntryStyle1" style={{ border: '0px none' }}>
-            <img src={process.env.PUBLIC_URL + "/Images/Me/MyImage.png"} width="180px" height="200px" style={{ alignSelf: 'left' }} />    
+            <img src={process.env.PUBLIC_URL + "/Images/Me/MyImage.png"} width="90px" height="100px" style={{ alignSelf: 'left' }} />    
           </div>
 
             <div className="aboutMeEntryStyle1" style={{  }}>

@@ -92,7 +92,9 @@ class Projects extends Component {
     return(
       <div style={{width: 'auto', margin: 'auto'}}>
 
-
+      <h3 style={{ border: '1px solid magenta', color: 'green', textAlign: 'center' }}  hidden>
+        Status: {this.props.loggedInStatus}
+      </h3><br /><br />
 
         <div className="Projects-Header" >
 

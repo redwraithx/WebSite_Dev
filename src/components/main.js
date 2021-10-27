@@ -8,9 +8,16 @@ import Resume from './newresume';
 
 
 const Main = () => (
+
   
     <Switch>
-      <Route exact path='/' component={LandingPage} />
+      <Route 
+        exact path={"/"}
+        render={props => (
+          <LandingPage { ...props } loggedInStatus={this.state.loggedInStatus} />
+        )}
+      />
+      {/* <Route exact path='/' component={LandingPage} /> */}
       <Route path='/projects' component={Projects} />
       <Route path='/newresume' component={Resume} />
       <Route path='/aboutme' component={AboutMe} />

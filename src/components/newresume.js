@@ -50,7 +50,7 @@ class Resume extends Component {
                     </tr>
                     <tr align="center">
                       { /* Left Column */ }
-                      <th className="ResumeLeftColumnBG" style={{ top: '0', left: '0', width: '1135px', border: '0px solid yellow', backgroundColor: 'white' }}>
+                      <th className="ResumeLeftColumnBG" style={{ top: '0', left: '0', width: '1135px', height: '100%', border: '0px solid yellow', backgroundColor: 'white' }}>
                         
                         <div>
                           <div className="ProfessionSummaryHeader">
@@ -60,7 +60,7 @@ class Resume extends Component {
                           </div>
 
                           <div className="ProfessionSummary">
-                            Hardworking, enthusiastic and passionate job seeker, anxious to obtain
+                            Hardworking, enthusiastic and passionate job seeker, eager to obtain
                             entry-level Game Developer position. Previous professional experience in
                             IT and Management honed ability to work under pressure and adapt to
                             new situations and challenges. Experienced programmer ready to help
@@ -80,24 +80,62 @@ class Resume extends Component {
                           </div>
 
                           <div className="WorkHistoryBody" >
-                            Toronto Film School - CAPSTONE PROJECT TEAM LEADER<br />
+                            Toronto Film School - Unity & C# CAPSTONE PROJECT LEAD PROGRAMMER - <br />
                             Diploma in Video Game Design & Development: Game Programming<br />
                             04/2020 to 10/2021<br />
                           </div>
                           <ul className="WorkHistoryList" >
                             <li className="WorkHistoryListItem">
                               Acted as team director/lead for the programmers of our capstone at the request of the team.
+                              <ul className="WorkHistoryListItemChild">
+                                <li>
+                                  Updated the Team Leads/Directors of our progress during closed-door meetings; Discussed future game systems that needed to be addressed to meet deadlines of the project.
+                                </li>  
+                                <li>
+                                  Facilitated weekly meetings where Team Leads would highlight the programmers' progress and/or roadblocks; Attempted to maintain transparency between the Programming and Artist teams
+                                </li>
+                                <li>
+                                  GitHub repository Administrator:
+                                </li>
+                                <ul className="WorkHistoryListItemChild">
+                                  <li>
+                                    Pulled request approvals and assigned approval checks for my own pull requests from other Leads.
+                                  </li>
+                                  <li>
+                                    Rolled back project when/if required.
+                                  </li>
+                                </ul>
+                              </ul>
                             </li>
                             <li className="WorkHistoryListItem">
                               Worked with Photon PUN2 to add Networking to Unity for our capstone. 
                               Created a lobby where players can create games or join games as they become available.
                             </li>
                             <li className="WorkHistoryListItem">
-                              Worked on the base systems for the player’s movement and grab systems, 
-                              the machine’s systems, item interface and class as well as the player’s saving /loading profile system.
+                              Worked on: 
+                              <ul className="WorkHistoryListItemChild">
+                                <li>
+                                  Programmed base systems for the player including movement, grab system, machine interactions as well as network counterparts
+                                </li>
+                                <li>
+                                  Wrote base script for the machines to allow the script's use in any machine within the game 
+                                </li>
+                                <li>
+                                  Designed an Item-interface and Item-Class System where programmers could add objects without needing to write 
+                                  extra logic to work within the game
+                                   
+                                  
+                                </li>
+                                <li>
+                                  Designed and wrote player’s saving/loading profile system
+                                </li>
+                              </ul>  
+
                             </li>
                             <li className="WorkHistoryListItem">
-                              Administrated the GitHub repository for our project.
+                              Assisted the team with 1 on 1 meetings when requested to keep momentum of the project. Adapted to work with programmers from several time zones. Ensured we were able to meet the completion timeline. 
+                              From this process I discerned which topics needed to be brought to the Team Leads meetings 
+                              in order to make an actionable-decisions in advance.
                             </li>
                           </ul>
 
@@ -110,16 +148,22 @@ class Resume extends Component {
                           </div>
                           <ul className="WorkHistoryList" >
                             <li className="WorkHistoryListItem">
-                              Played unreleased games for fun-factor and gameplay.
+                              Played unreleased games for the fun-factor, gameplay feel as well as part of the physiology of events in games make players feel.
                             </li>
                             <li className="WorkHistoryListItem">
-                              Searched for and reported bugs.
+                              Searched for and reported bugs during game play sessions and explained how I was able to reproduce them step by step, with an understanding of how the system may have been created on the back end.
                             </li>
                             <li className="WorkHistoryListItem">
-                              Advised of game viability.
+                              Advised of game viability to the QA team on understanding the the underline systems at play after a confusing meeting(s) with one of the programmer team meetings.
                             </li>
                             <li className="WorkHistoryListItem">
-                              Currently under NDA on these projects.
+                              Currently under NDA on several projects.
+                              <ul class="WorkHistoryListItemChild">
+                                <li>
+                                  NDA removed for the following released games: <b>Hungry Dragon</b> & <b>Tom Clancy's Elite Squad</b> - where I beta tested
+                                  the psychology of fun, and relavant rewards within the games.
+                                </li>
+                              </ul>
                             </li>
                           </ul>
 
@@ -150,7 +194,7 @@ class Resume extends Component {
                               Programmed external-facing Cisco switch for Ungerboeck's application server.
                             </li>
                             <li className="WorkHistoryListItem">
-                              Created and programmed tools such as a Network Switch Status Tool which allowed staff to monitor switch activity without being present onsite.
+                              Created and programmed C# tools such as a Network Switch Status Tool which allowed staff to monitor switch activity without being present onsite.
                             </li>
                           </ul>
 
@@ -218,9 +262,9 @@ class Resume extends Component {
 
 
                       { /* Right Column */}
-                      <th className="ResumeRightColumnBG" style={{ top: '0', left: '0', color: 'black', width: '120px', border: '0px solid green'  }}>
+                      <th className="ResumeRightColumnBG" style={{ display: 'inline-flex', flexDirection: 'column', position: 'relative', top: '0', left: '0', color: 'black', width: '340px', height: '100%', border: '0px solid green'  }}>
 
-                        <div style={{ paddingTop: '10px', paddingBottom: '10px', border: '0px solid magenta' }}>
+                        <div style={{ paddingTop: '30px', paddingBottom: '10px', border: '0px solid magenta' }}>
 
                           <div style={{ width: '280px', display: 'inline-flex' }}>
                             { /* <div style={{ margin: '5px' }} summary="icon" >test</div> */ }
@@ -284,11 +328,11 @@ class Resume extends Component {
                           
                         <div style={{ fontSize: '18px', width: '350px', textAlign: 'left', marginTop: '5px', marginBottom: '5px', paddingLeft: '38px' }}>
                           <i>
-                            Skills
+                            Skills - Links to relavent skills can be found in 
                           </i>
                         </div>
 
-                          <div style={{ width: '350px', display: 'flex', paddingRight: '10px' }}>
+                          <div style={{ width: '320px', display: 'flex', paddingRight: '10px', border: '0px solid red' }}>
                             <ul >
                               <li className="SkillsList">
                                 Computer & Programming skills
@@ -330,13 +374,13 @@ class Resume extends Component {
                           </i>
                         </div>
 
-                          <div style={{ width: '350px', textAlign: 'left', paddingRight: '10px' }}>
+                          <div style={{ width: '330px', textAlign: 'left', paddingRight: '10px',  }}>
 
                             <div style={{ fontSize: '17px', marginLeft: '10px' }}>
                               09/2021 - Toronto Film School, Toronto, ON<br />
                               Diploma in Video Game Design & Development: Game Programming<br /><br />
                             </div>
-                            <ul style={{ marginBottom: '20px' }} >
+                            <ul style={{ marginBottom: '20px', border: '0px solid red' }} >
                               <li className="EducationList">
                                 Dean's List Jun 2020 to Sept 2021
                               </li>
@@ -363,7 +407,7 @@ class Resume extends Component {
                               07/2017 - Eastern College, Halifax, NS<br />
                               Diploma in IT Systems Administration: Information Technology<br /><br />
                             </div>
-                            <ul style={{ marginBottom: '20px', paddingRight: '10px' }} >
+                            <ul style={{ marginBottom: '20px', paddingRight: '10px', border: '0px solid red' }} >
                               <li className="EducationList">
                                 Award of Excellence 2017
                               </li>

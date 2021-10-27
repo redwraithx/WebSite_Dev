@@ -160,6 +160,15 @@
 
   border: 0px solid cyan;
 }
+  .WorkHistoryListItemChild {
+  color: black;
+
+  font-size: 17px;
+
+  border: 0px solid blueviolet;
+}
+
+
 
 
   .SkillsList {
@@ -178,8 +187,8 @@
     background-color: slategray; 
     border: 2px; 
     align-self: left;
-    margin-left: 30px;
-    margin-right: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
     width: 90%;
   }
 
@@ -187,4 +196,6 @@
     background-color: slategray; 
     border: 2px; 
     width: 80%;
+    align-self: center;
+    
   }
