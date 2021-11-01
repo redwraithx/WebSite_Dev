@@ -13,14 +13,14 @@ class LoadFooter extends Component {
 
           
 
-        <Footer size="2" style={{ paddingTop: '15px' }}>
+        <Footer size="2" style={{ paddingTop: '20px' }}>
             <div align="center">
                 BrianPurdy.ca @ 2021, best viewed @ 1920x1080 resolution.
             </div>
         </Footer>
 
 
-        <div style={{ textAlign: 'center', color: 'white', paddingTop: '20px', paddingBottom: '0px' }}>
+        <div align="center" style={{ color: 'white', paddingTop: '20px', paddingBottom: '0px' }}>
           
           {/* <!-- hitwebcounter Code START --> */}
           
