@@ -6,10 +6,64 @@ import '.././Contact.css'
 
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      email: '',
+      message: ''
+    }
+
+    this.handleSubmit = this.handleSubmit.bind(this);
+
+  }
+
+
 
   componentDidMount() {
     window.scrollTo(0, 0)
   }
+
+  onNameChange(event) {
+    this.setState({name: event.target.value})
+  }
+
+  onEmailChange(event) {
+    this.setState({email: event.target.value})
+  }
+
+  onMessageChange(event) {
+    this.setState({message: event.target.value})
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    
+    // debuging output REMOVE THIS ONCE IT IS COMPLETE
+    console.log(this.state);
+
+    fetch('http://localhost:3002/send', {
+      method: "POST",
+      body: JSON.stringify(this.state),
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+    }).then(
+      (response) => (response.json())
+    ).then((response)=> {
+      if(response.status === 'success') {
+        alert("Message Sent.");
+        this.resetForm()
+      } else if(response.status === 'fail') {
+        alert("Message failed to send.")
+      }
+    })
+
+  }
+
+
+
   
   render() {
     return(
@@ -34,8 +88,9 @@ class Contact extends Component {
               
             
 
-              <div className="contact-list" style={{ display: 'flex',  justifyContent: 'center', alignContent: 'center' }} >
-                <List>
+              { /* <div className="contact-list" style={{ display: 'flex',  justifyContent: 'center', alignContent: 'center' }} > */ }
+              <div className="contact-list" style={{ border: '1 solid magenta', display: 'flex',  justifyContent: 'center', alignContent: 'center' }} >
+                <List hidden>
                   { /*
                   <ListItem>
                     <ListItemContent style={{ fontSize: '30px', fontFamily: 'Anton', border: '2px solid magenta' }} className="PhoneInfo">
@@ -46,7 +101,8 @@ class Contact extends Component {
                   </ListItem>
                   */ }
 
-                  <ListItem>
+                  { /* Old Mail System */ }
+                  <ListItem hidden>
                     <ListItemContent style={{  }} className="EmailInfo">
                       <div className="EmailFrame" style={{ display:'inline-flex' }}>
                       {/* <i className="fa fa-envelope" aria-hidden="false" style={{  }} /> */}
@@ -63,6 +119,29 @@ class Contact extends Component {
                   </ListItem>
 
                 </List>
+
+
+
+                { /* New Mail System */ }
+                <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+                  <div className="form-group">
+                      <label htmlFor="name">Name</label>
+                      <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} />
+                  </div>
+                  <div className="form-group">
+                      <label htmlFor="exampleInputEmail1">Email address</label>
+                      <input type="email" className="form-control" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+                  </div>
+                  <div className="form-group">
+                      <label htmlFor="message">Message</label>
+                      <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)}></textarea>
+                  </div>
+                  <button type="submit" className="btn btn-primary">Submit</button>
+                </form>
+
+
+
+
               </div>
             </div>
 

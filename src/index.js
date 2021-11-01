@@ -9,7 +9,9 @@ import './index.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Resume from './components/newresume';
 import ReactGA from 'react-ga';
-const TRACKING_ID = "G-2QZWQM6HNW";
+const TRACKING_ID = "G-9SBVP3FZKF";
+
+
 ReactGA.initialize(TRACKING_ID);
 
 
