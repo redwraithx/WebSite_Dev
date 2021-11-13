@@ -24,9 +24,8 @@ class LoadFooter extends Component {
           
           {/* <!-- hitwebcounter Code START --> */}
           
-            <a href="https://www.hitwebcounter.com" target="_blank">
-              <img src="https://hitwebcounter.com/counter/counter.php?page=7890711&style=0010&nbdigits=5&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" />
-            </a>
+          <a href="https://www.hitwebcounter.com" target="_blank">
+            <img src="https://hitwebcounter.com/counter/counter.php?page=7890716&style=0010&nbdigits=5&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>          
           
           {/* <!-- hitwebcounter Code END --> */}
 

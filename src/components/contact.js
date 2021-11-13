@@ -90,7 +90,7 @@ class Contact extends Component {
 
               { /* <div className="contact-list" style={{ display: 'flex',  justifyContent: 'center', alignContent: 'center' }} > */ }
               <div className="contact-list" style={{ border: '1 solid magenta', display: 'flex',  justifyContent: 'center', alignContent: 'center' }} >
-                <List hidden>
+                <List >
                   { /*
                   <ListItem>
                     <ListItemContent style={{ fontSize: '30px', fontFamily: 'Anton', border: '2px solid magenta' }} className="PhoneInfo">
@@ -102,7 +102,7 @@ class Contact extends Component {
                   */ }
 
                   { /* Old Mail System */ }
-                  <ListItem hidden>
+                  <ListItem>
                     <ListItemContent style={{  }} className="EmailInfo">
                       <div className="EmailFrame" style={{ display:'inline-flex' }}>
                       {/* <i className="fa fa-envelope" aria-hidden="false" style={{  }} /> */}
@@ -112,7 +112,7 @@ class Contact extends Component {
                           <input type="action" id="email" />
                           <input type="button" id="buttonEmail" value="click" />
                         </form>
-                   */ }
+                      */ }
                       { /* <button onClick={ () =>  window.Clipboard.setData("Text", 'brianpurdy@live.com') } className="EmailButton">BrianPurdy@live.com</button> */ }
                       </div>
                     </ListItemContent>
@@ -123,7 +123,7 @@ class Contact extends Component {
 
 
                 { /* New Mail System */ }
-                <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+                <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST" hidden>
                   <div className="form-group">
                       <label htmlFor="name">Name</label>
                       <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} />
